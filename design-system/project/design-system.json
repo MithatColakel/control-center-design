@@ -1,0 +1,51 @@
+{
+  "v": 3,
+  "layout": "files",
+  "createdOnFiles": {
+    "v": 1,
+    "at": "2026-11-14T10:00:00Z"
+  },
+  "title": "VPN Control Center",
+  "namespace": "VPNControlCenter",
+  "libraries": [
+    {
+      "name": "react",
+      "version": "18"
+    },
+    {
+      "name": "react-dom",
+      "version": "18"
+    }
+  ],
+  "sections": {},
+  "groups": [
+    "Logos",
+    "Icons",
+    "Flags"
+  ],
+  "assetGroups": {
+    "Logos": {
+      "name": "Logos",
+      "tile": "l",
+      "order": [],
+      "files": {}
+    },
+    "Icons": {
+      "name": "Icons",
+      "tile": "l",
+      "order": [],
+      "files": {}
+    },
+    "Flags": {
+      "name": "Flags",
+      "tile": "l",
+      "order": [],
+      "files": {}
+    }
+  },
+  "blobs": {},
+  "docs": {
+    "readme": "project/README.md",
+    "sections": []
+  }
+}

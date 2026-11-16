@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<title>Uptime · add maintenance window</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>
+body{margin:0}
+@font-face{font-family:'Inter';src:url('../../design-system/project/fonts/inter-latin-wght-normal.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Inter';src:url('../../design-system/project/fonts/inter-latin-ext-wght-normal.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:swap;unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+:root{--font-sans:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;--font-mono:ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;--radius-sm:4px;--radius-md:6px;--radius-lg:8px;--radius-xl:12px;--radius-full:9999px;--header-h:56px;--sidebar-w:240px;--sidebar-rail:60px;--control-h:36px;--control-h-sm:32px;--row-h:44px;--row-h-dense:36px;--icon:16px;--space-0_5:2px;--space-1:4px;--space-1_5:6px;--space-2:8px;--space-3:12px;--space-4:16px;--space-5:20px;--space-6:24px;--space-8:32px;--space-10:40px;--space-12:48px;--space-16:64px;--opacity-disabled:0.5;--seq-100:#cde2fb;--seq-200:#9ec5f4;--seq-300:#6da7ec;--seq-400:#3987e5;--seq-500:#256abf;--seq-600:#184f95;--seq-700:#0d366b}
+.light{color-scheme:light;--background:#f7f7f8;--foreground:#18181b;--card:#ffffff;--popover:#ffffff;--primary:#18181b;--primary-hover:#27272a;--primary-foreground:#fafafa;--secondary:#f4f4f5;--secondary-foreground:#18181b;--muted:#f4f4f5;--muted-foreground:#5f5f69;--subtle-foreground:#8e8e98;--accent:#f1f1f3;--accent-foreground:#18181b;--destructive:#dc2626;--destructive-foreground:#ffffff;--border:#e4e4e7;--border-strong:#d4d4d8;--input:#d4d4d8;--input-bg:#ffffff;--ring:#2563eb;--ring-soft:rgba(37,99,235,.16);--link:#1d4ed8;--sidebar:#fbfbfc;--sidebar-foreground:#3f3f46;--sidebar-accent:#ececef;--header-bg:rgba(247,247,248,.86);--overlay:rgba(9,9,11,.42);--tooltip-bg:#18181b;--tooltip-fg:#fafafa;--table-head:#fbfbfc;--row-hover:#f7f7f9;--row-selected:#eff4ff;--skeleton:#ececef;--skeleton-shine:rgba(255,255,255,.7);--nodata-bg:#fbfbfc;--hatch:rgba(24,24,27,.10);--hatch-strong:rgba(255,255,255,.55);--logo-bg:#f4f4f5;--flag-ring:rgba(24,24,27,.14);--switch-off:#d4d4d8;--meter-track:#ececef;--dlg-foot:#fbfbfc;--ok-solid:#16a34a;--ok-fg:#15803d;--ok-bg:#f0fdf4;--ok-border:#bbf7d0;--warn-solid:#f59e0b;--warn-fg:#a16207;--warn-bg:#fffbeb;--warn-border:#fde68a;--crit-solid:#dc2626;--crit-fg:#b91c1c;--crit-bg:#fef2f2;--crit-border:#fecaca;--crit-soft:rgba(220,38,38,.14);--info-solid:#2563eb;--info-fg:#1d4ed8;--info-bg:#eff6ff;--info-border:#bfdbfe;--neutral-solid:#a1a1aa;--neutral-fg:#52525b;--neutral-bg:#f4f4f5;--neutral-border:#e4e4e7;--chart-grid:#ececef;--chart-axis:#71717a;--chart-baseline:#d4d4d8;--chart-target:#52525b;--chart-event:#7c3aed;--series-1:#2a78d6;--series-2:#eb6834;--series-3:#1baf7a;--series-4:#eda100;--series-5:#e87ba4;--series-6:#008300;--series-7:#4a3aa7;--series-8:#e34948;--outcome-first:#16a34a;--outcome-later:#86c99a;--outcome-api:#ec835a;--outcome-failed:#d03b3b;--shadow-xs:0 1px 2px rgba(16,16,20,.05);--shadow-md:0 6px 16px -4px rgba(16,16,20,.12), 0 2px 4px -2px rgba(16,16,20,.06);--shadow-lg:0 24px 48px -12px rgba(16,16,20,.28)}
+.dark{color-scheme:dark;--background:#09090b;--foreground:#fafafa;--card:#111113;--popover:#18181b;--primary:#fafafa;--primary-hover:#e4e4e7;--primary-foreground:#18181b;--secondary:#1d1d20;--secondary-foreground:#fafafa;--muted:#1d1d20;--muted-foreground:#a1a1aa;--subtle-foreground:#71717a;--accent:#232326;--accent-foreground:#fafafa;--destructive:#dc2626;--destructive-foreground:#ffffff;--border:#27272a;--border-strong:#3f3f46;--input:#3f3f46;--input-bg:#0c0c0e;--ring:#3b82f6;--ring-soft:rgba(59,130,246,.22);--link:#60a5fa;--sidebar:#0c0c0e;--sidebar-foreground:#d4d4d8;--sidebar-accent:#1f1f23;--header-bg:rgba(9,9,11,.82);--overlay:rgba(0,0,0,.62);--tooltip-bg:#fafafa;--tooltip-fg:#18181b;--table-head:#141416;--row-hover:#18181b;--row-selected:#16213a;--skeleton:#202024;--skeleton-shine:rgba(255,255,255,.05);--nodata-bg:#0e0e10;--hatch:rgba(250,250,250,.10);--hatch-strong:rgba(0,0,0,.45);--logo-bg:#1d1d20;--flag-ring:rgba(250,250,250,.16);--switch-off:#3f3f46;--meter-track:#232326;--dlg-foot:#141416;--ok-solid:#22c55e;--ok-fg:#4ade80;--ok-bg:rgba(34,197,94,.12);--ok-border:rgba(34,197,94,.32);--warn-solid:#f59e0b;--warn-fg:#fbbf24;--warn-bg:rgba(245,158,11,.12);--warn-border:rgba(245,158,11,.32);--crit-solid:#ef4444;--crit-fg:#f87171;--crit-bg:rgba(239,68,68,.12);--crit-border:rgba(239,68,68,.34);--crit-soft:rgba(239,68,68,.22);--info-solid:#3b82f6;--info-fg:#60a5fa;--info-bg:rgba(59,130,246,.12);--info-border:rgba(59,130,246,.32);--neutral-solid:#52525b;--neutral-fg:#a1a1aa;--neutral-bg:#1d1d20;--neutral-border:#2e2e33;--chart-grid:#232326;--chart-axis:#a1a1aa;--chart-baseline:#3f3f46;--chart-target:#a1a1aa;--chart-event:#a78bfa;--series-1:#3987e5;--series-2:#d95926;--series-3:#199e70;--series-4:#c98500;--series-5:#d55181;--series-6:#008300;--series-7:#9085e9;--series-8:#e66767;--outcome-first:#22c55e;--outcome-later:#2f7d4a;--outcome-api:#ec835a;--outcome-failed:#e05252;--shadow-xs:0 1px 2px rgba(0,0,0,.4);--shadow-md:0 6px 16px -4px rgba(0,0,0,.6), 0 0 0 1px rgba(255,255,255,.02);--shadow-lg:0 24px 48px -12px rgba(0,0,0,.8)}
+/* VPN Control Center — shared component CSS for design previews and canvas frames.
+   Generated pages inline this file. It uses only token variables (see tokens.json),
+   so `.light` and `.dark` on a wrapper switch the theme. shadcn/ui + Tailwind names
+   are given in each component README. */
+
+*{box-sizing:border-box}
+.cc{font-family:var(--font-sans);font-size:14px;line-height:20px;color:var(--foreground);background:var(--background);
+  font-feature-settings:"cv11","ss01";-webkit-font-smoothing:antialiased}
+.cc *{box-sizing:border-box}
+.cc p{margin:0}
+.cc h1,.cc h2,.cc h3,.cc h4{margin:0;font-weight:600}
+.num,.cc .num{font-variant-numeric:tabular-nums}
+.mono{font-family:var(--font-mono);font-size:12.5px}
+.muted{color:var(--muted-foreground)}
+.subtle{color:var(--subtle-foreground)}
+.ic{width:16px;height:16px;flex:none;display:inline-block;vertical-align:-3px;stroke-width:2}
+.ic.s14{width:14px;height:14px;vertical-align:-2px}
+.ic.s12{width:12px;height:12px;vertical-align:-1px}
+.ic.s20{width:20px;height:20px}
+.ic.s24{width:24px;height:24px}
+.row{display:flex;align-items:center;gap:8px}
+.col{display:flex;flex-direction:column}
+.sp{flex:1;min-width:0}
+.wrap{flex-wrap:wrap}
+.trunc{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+
+/* ---------- type ---------- */
+.t-kpi{font-size:28px;line-height:32px;font-weight:600;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.t-h1{font-size:20px;line-height:28px;font-weight:600;letter-spacing:-.01em}
+.t-h2{font-size:16px;line-height:24px;font-weight:600}
+.t-h3{font-size:14px;line-height:20px;font-weight:600}
+.t-body{font-size:14px;line-height:20px}
+.t-small{font-size:13px;line-height:20px}
+.t-cap{font-size:12px;line-height:16px}
+.t-cap-s{font-size:12px;line-height:16px;font-weight:500}
+
+/* ---------- buttons (shadcn Button) ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;height:36px;padding:0 14px;border-radius:var(--radius-md);
+  font:500 14px/20px var(--font-sans);border:1px solid transparent;white-space:nowrap;cursor:pointer;background:none;color:var(--foreground)}
+.btn.primary{background:var(--primary);color:var(--primary-foreground)}
+.btn.primary.hover{background:var(--primary-hover)}
+.btn.outline{background:var(--card);border-color:var(--input);box-shadow:var(--shadow-xs)}
+.btn.outline.hover,.btn.ghost.hover{background:var(--accent)}
+.btn.secondary{background:var(--secondary);color:var(--secondary-foreground)}
+.btn.ghost{background:transparent}
+.btn.destructive{background:var(--destructive);color:var(--destructive-foreground)}
+.btn.destructive-outline{background:var(--card);border-color:var(--crit-border);color:var(--crit-fg)}
+.btn.link{padding:0;height:auto;color:var(--link);text-decoration:underline;text-underline-offset:3px}
+.btn.sm{height:32px;padding:0 10px;font-size:13px}
+.btn.xs{height:28px;padding:0 8px;font-size:12px;gap:4px}
+.btn.icon{width:36px;padding:0}
+.btn.icon.sm{width:32px}
+.btn.focus{outline:2px solid var(--ring);outline-offset:2px}
+.btn.disabled,.btn[disabled]{opacity:var(--opacity-disabled);cursor:not-allowed}
+.spin{width:14px;height:14px;border-radius:50%;border:2px solid currentColor;border-right-color:transparent;display:inline-block;animation:spin .8s linear infinite;opacity:.8}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* ---------- chips, badges, source labels ---------- */
+.chip{display:inline-flex;align-items:center;gap:5px;height:22px;padding:0 8px;border-radius:var(--radius-full);font:500 12px/16px var(--font-sans);
+  border:1px solid var(--neutral-border);background:var(--neutral-bg);color:var(--neutral-fg);white-space:nowrap}
+.chip .dot{width:6px;height:6px;border-radius:50%;background:currentColor;flex:none}
+.chip .ic{width:12px;height:12px;vertical-align:0}
+.chip.ok{border-color:var(--ok-border);background:var(--ok-bg);color:var(--ok-fg)}
+.chip.warn{border-color:var(--warn-border);background:var(--warn-bg);color:var(--warn-fg)}
+.chip.crit{border-color:var(--crit-border);background:var(--crit-bg);color:var(--crit-fg)}
+.chip.info{border-color:var(--info-border);background:var(--info-bg);color:var(--info-fg)}
+.chip.solid-crit{background:var(--crit-solid);border-color:var(--crit-solid);color:#fff}
+.chip.outline{background:transparent}
+.chip.square{border-radius:var(--radius-sm)}
+.chip.partial{background-image:repeating-linear-gradient(135deg,transparent 0 4px,var(--hatch) 4px 5px);border-style:solid}
+.chip.nodata{border-style:dashed;background:transparent;color:var(--muted-foreground)}
+.chip.count{height:18px;min-width:18px;padding:0 5px;justify-content:center;font-size:11px}
+.src{display:inline-flex;align-items:center;gap:4px;height:20px;padding:0 6px;border-radius:var(--radius-sm);border:1px solid var(--border);
+  font:500 11px/14px var(--font-sans);letter-spacing:.01em;color:var(--muted-foreground);background:var(--card);white-space:nowrap}
+.src .ic{width:12px;height:12px;vertical-align:0}
+.src.pending{border-style:dashed}
+.kbd{font:500 11px/16px var(--font-mono);padding:0 5px;border:1px solid var(--border);border-bottom-width:2px;border-radius:4px;color:var(--muted-foreground)}
+
+/* ---------- card (shadcn Card) ---------- */
+.card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);box-shadow:var(--shadow-xs);min-width:0}
+.card-h{display:flex;align-items:flex-start;flex-wrap:wrap;gap:8px 12px;padding:16px 20px 0}
+.card-h>.sp{flex:1 1 160px}
+.card-h .ttl{font:600 14px/20px var(--font-sans)}
+.card-h .desc{font-size:13px;line-height:18px;color:var(--muted-foreground);margin-top:2px}
+.card-b{padding:16px 20px 20px}
+.card-f{padding:12px 20px;border-top:1px solid var(--border);display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted-foreground)}
+.card.flat{box-shadow:none}
+.card.inset{background:var(--muted);border-color:transparent;box-shadow:none}
+.divider{height:1px;background:var(--border)}
+.vdivider{width:1px;align-self:stretch;background:var(--border)}
+
+/* ---------- KPI tile ---------- */
+.kpi{padding:16px 18px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.kpi .lbl{display:flex;align-items:center;gap:6px;font-size:13px;line-height:18px;color:var(--muted-foreground)}
+.kpi .val{display:flex;align-items:baseline;gap:8px}
+.kpi .unit{font-size:14px;font-weight:500;color:var(--muted-foreground)}
+.kpi .foot{display:flex;align-items:center;flex-wrap:wrap;gap:4px 8px;font-size:12px;line-height:16px;color:var(--muted-foreground)}
+.delta{display:inline-flex;white-space:nowrap;align-items:center;gap:2px;font:500 12px/16px var(--font-sans);font-variant-numeric:tabular-nums}
+.delta.up-good,.delta.down-good{color:var(--ok-fg)}
+.delta.up-bad,.delta.down-bad{color:var(--crit-fg)}
+.delta.flat{color:var(--muted-foreground)}
+.kpi.alert{box-shadow:inset 3px 0 0 var(--crit-solid),var(--shadow-xs)}
+.kpi.warnbar{box-shadow:inset 3px 0 0 var(--warn-solid),var(--shadow-xs)}
+
+/* ---------- skeleton / states ---------- */
+.skel{background:var(--skeleton);border-radius:var(--radius-sm);position:relative;overflow:hidden}
+.skel::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent,var(--skeleton-shine),transparent);transform:translateX(-60%)}
+.state{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:8px;padding:28px 20px;min-height:160px}
+.state .st-ic{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--muted);color:var(--muted-foreground)}
+.state .st-t{font:600 14px/20px var(--font-sans)}
+.state .st-d{font-size:13px;line-height:18px;color:var(--muted-foreground);max-width:360px}
+.state.err .st-ic{background:var(--crit-bg);color:var(--crit-fg)}
+.state.empty .st-ic{background:var(--ok-bg);color:var(--ok-fg)}
+.state.nodata{border:1px dashed var(--border-strong);border-radius:var(--radius-md);background:var(--nodata-bg)}
+.banner{display:flex;align-items:flex-start;gap:10px;padding:10px 12px;border-radius:var(--radius-md);border:1px solid var(--border);font-size:13px;line-height:18px}
+.banner .ic{margin-top:1px}
+.banner.partial{border-color:var(--warn-border);background:var(--warn-bg);color:var(--warn-fg)}
+.banner.partial b{color:var(--foreground)}
+.banner.info{border-color:var(--info-border);background:var(--info-bg);color:var(--info-fg)}
+.banner.crit{border-color:var(--crit-border);background:var(--crit-bg);color:var(--crit-fg)}
+.banner .bt{color:var(--foreground);font-weight:500}
+.hatch{background-image:repeating-linear-gradient(135deg,transparent 0 4px,var(--hatch-strong) 4px 6px)}
+.lowdata{color:var(--subtle-foreground)!important}
+
+/* ---------- app shell ---------- */
+.shell{display:grid;grid-template-columns:var(--sidebar-w) minmax(0,1fr);min-height:100%;background:var(--background)}
+.shell.rail{grid-template-columns:var(--sidebar-rail) minmax(0,1fr)}
+.shell.mobile{grid-template-columns:minmax(0,1fr)}
+.sb{background:var(--sidebar);border-right:1px solid var(--border);display:flex;flex-direction:column;min-width:0}
+.sb-brand{height:var(--header-h);display:flex;align-items:center;gap:10px;padding:0 16px;border-bottom:1px solid var(--border)}
+.logo{width:28px;height:28px;border-radius:7px;flex:none;background:var(--logo-bg);display:flex;align-items:center;justify-content:center;color:var(--muted-foreground);
+  border:1px dashed var(--border-strong);font:600 10px/1 var(--font-sans)}
+.sb-brand .nm{font:600 14px/18px var(--font-sans)}
+.sb-brand .env{font-size:11px;line-height:14px;color:var(--muted-foreground)}
+.sb-nav{padding:12px 8px;display:flex;flex-direction:column;gap:14px;flex:1}
+.sb-grp{display:flex;flex-direction:column;gap:1px}
+.sb-gl{font:500 11px/16px var(--font-sans);color:var(--subtle-foreground);padding:4px 10px;letter-spacing:.02em}
+.sb-it{display:flex;align-items:center;gap:10px;height:32px;padding:0 10px;border-radius:var(--radius-md);color:var(--sidebar-foreground);font-size:13.5px;font-weight:450}
+.sb-it .ic{color:var(--muted-foreground)}
+.sb-it.on{background:var(--sidebar-accent);color:var(--foreground);font-weight:550}
+.sb-it.on .ic{color:var(--foreground)}
+.sb-it.hover{background:var(--accent)}
+.sb-it .chip{margin-left:auto}
+.sb-foot{border-top:1px solid var(--border);padding:12px 16px;font:400 11px/16px var(--font-mono);color:var(--subtle-foreground)}
+.shell.rail .sb-brand{padding:0;justify-content:center}
+.shell.rail .sb-nav{padding:12px 10px;gap:10px}
+.shell.rail .sb-it{justify-content:center;padding:0;width:36px;height:36px;position:relative}
+.shell.rail .sb-it .ic{width:18px;height:18px}
+.shell.rail .sb-it .badge{position:absolute;top:4px;right:4px;width:8px;height:8px;border-radius:50%;background:var(--crit-solid);border:2px solid var(--sidebar)}
+.shell.rail .sb-sep{height:1px;background:var(--border);margin:2px 4px}
+.main{display:flex;flex-direction:column;min-width:0}
+.hdr{height:var(--header-h);display:flex;align-items:center;gap:12px;padding:0 24px;border-bottom:1px solid var(--border);background:var(--header-bg);
+  backdrop-filter:saturate(1.4) blur(6px);position:relative;z-index:2}
+.crumb{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--muted-foreground);min-width:0}
+.crumb .cur{color:var(--foreground);font-weight:600;font-size:14px}
+.crumb .ic{width:14px;height:14px;color:var(--subtle-foreground)}
+.hdr .seg{display:flex;border:1px solid var(--input);border-radius:var(--radius-md);overflow:hidden;height:32px}
+.hdr .seg span{padding:0 9px;display:flex;align-items:center;font:500 12px/1 var(--font-sans);color:var(--muted-foreground)}
+.hdr .seg span.on{background:var(--accent);color:var(--foreground)}
+.alerts-btn{display:inline-flex;align-items:center;gap:6px;height:32px;padding:0 10px 0 9px;border-radius:var(--radius-md);border:1px solid var(--crit-border);
+  background:var(--crit-bg);color:var(--crit-fg);font:500 13px/1 var(--font-sans)}
+.alerts-btn.none{border-color:var(--input);background:var(--card);color:var(--muted-foreground)}
+.avatar{width:32px;height:32px;border-radius:50%;background:var(--muted);display:flex;align-items:center;justify-content:center;color:var(--muted-foreground);font:600 12px/1 var(--font-sans);border:1px solid var(--border)}
+.content{padding:24px;display:flex;flex-direction:column;gap:20px;min-width:0}
+.content.m{padding:16px;gap:16px}
+
+/* page header */
+.ph{display:flex;align-items:flex-end;gap:16px;flex-wrap:wrap}
+.ph .q{font-size:14px;line-height:20px;color:var(--muted-foreground);margin-top:4px}
+.ph .acts{display:flex;align-items:center;gap:8px;margin-left:auto;flex-wrap:wrap}
+.ph360{display:flex;align-items:flex-start;gap:14px}
+.ph360 .big-flag{width:40px;height:30px;border-radius:4px;box-shadow:0 0 0 1px var(--flag-ring);flex:none;margin-top:2px}
+.meta{display:flex;align-items:center;gap:6px 14px;flex-wrap:wrap;font-size:13px;color:var(--muted-foreground)}
+.meta>span{display:inline-flex;align-items:center;gap:5px}
+
+/* ---------- tabs ---------- */
+.tabs{display:flex;gap:2px;border-bottom:1px solid var(--border);overflow-x:auto;scrollbar-width:none}
+.tab{display:inline-flex;align-items:center;gap:6px;height:38px;padding:0 12px;font:500 13.5px/1 var(--font-sans);color:var(--muted-foreground);
+  border-bottom:2px solid transparent;margin-bottom:-1px;white-space:nowrap}
+.tab.on{color:var(--foreground);border-bottom-color:var(--foreground)}
+.tab .chip.count{height:18px}
+.segm{display:inline-flex;padding:3px;gap:2px;border-radius:var(--radius-md);background:var(--muted)}
+.segm span{height:26px;padding:0 10px;display:flex;align-items:center;border-radius:4px;font:500 12.5px/1 var(--font-sans);color:var(--muted-foreground);white-space:nowrap}
+.segm span.on{background:var(--card);color:var(--foreground);box-shadow:var(--shadow-xs)}
+
+/* ---------- forms ---------- */
+.fld{display:flex;flex-direction:column;gap:6px;min-width:0}
+.fld>label,.lbl-s{font:500 13px/16px var(--font-sans)}
+.fld .help{font-size:12px;line-height:16px;color:var(--muted-foreground)}
+.fld .err{font-size:12px;line-height:16px;color:var(--crit-fg);display:flex;gap:4px;align-items:center}
+.inp{height:36px;display:flex;align-items:center;gap:8px;padding:0 12px;border:1px solid var(--input);border-radius:var(--radius-md);background:var(--input-bg);
+  font-size:14px;color:var(--foreground);box-shadow:var(--shadow-xs);min-width:0}
+.inp.sm{height:32px;font-size:13px;padding:0 10px}
+.inp .ph{color:var(--subtle-foreground)}
+.inp .ic{color:var(--muted-foreground)}
+.inp.focus{border-color:var(--ring);box-shadow:0 0 0 3px var(--ring-soft)}
+.inp.error{border-color:var(--crit-solid);box-shadow:0 0 0 3px var(--crit-soft)}
+.inp.disabled{opacity:var(--opacity-disabled);background:var(--muted)}
+.inp .caret{margin-left:auto;color:var(--muted-foreground)}
+.ta{height:auto;min-height:84px;align-items:flex-start;padding:8px 12px;line-height:20px}
+.sw{width:36px;height:20px;border-radius:10px;background:var(--switch-off);position:relative;flex:none}
+.sw::after{content:"";position:absolute;top:2px;left:2px;width:16px;height:16px;border-radius:50%;background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.2)}
+.sw.on{background:var(--primary)}
+.sw.on::after{left:18px;background:var(--primary-foreground)}
+.sw.dis{opacity:var(--opacity-disabled)}
+.cb{width:16px;height:16px;border-radius:4px;border:1px solid var(--border-strong);background:var(--input-bg);flex:none;display:flex;align-items:center;justify-content:center;color:var(--primary-foreground)}
+.cb.on{background:var(--primary);border-color:var(--primary)}
+.cb .ic{width:12px;height:12px;stroke-width:3}
+.rd{width:16px;height:16px;border-radius:50%;border:1px solid var(--border-strong);background:var(--input-bg);flex:none;position:relative}
+.rd.on{border-color:var(--primary)}
+.rd.on::after{content:"";position:absolute;inset:3px;border-radius:50%;background:var(--primary)}
+
+/* filter bar */
+.fbar{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.fbtn{display:inline-flex;align-items:center;gap:6px;height:32px;padding:0 10px;border:1px dashed var(--border-strong);border-radius:var(--radius-md);
+  font:500 13px/1 var(--font-sans);color:var(--foreground);background:var(--card)}
+.fbtn.set{border-style:solid;border-color:var(--input)}
+.fbtn .v{color:var(--muted-foreground);font-weight:400}
+.fbtn .ic{color:var(--muted-foreground)}
+
+/* ---------- popover, menu, tooltip, toast ---------- */
+.pop{background:var(--popover);border:1px solid var(--border);border-radius:var(--radius-md);box-shadow:var(--shadow-md);padding:4px;min-width:180px}
+.mi{display:flex;align-items:center;gap:8px;height:32px;padding:0 8px;border-radius:4px;font-size:13.5px}
+.mi .ic{color:var(--muted-foreground)}
+.mi.on{background:var(--accent)}
+.mi.danger{color:var(--crit-fg)}
+.mi.danger .ic{color:var(--crit-fg)}
+.mi .sc{margin-left:auto;font-size:11px;color:var(--subtle-foreground)}
+.msep{height:1px;background:var(--border);margin:4px -4px}
+.mlabel{font:500 11px/16px var(--font-sans);color:var(--subtle-foreground);padding:6px 8px 2px}
+.tip{display:inline-block;background:var(--tooltip-bg);color:var(--tooltip-fg);font:500 12px/16px var(--font-sans);padding:6px 8px;border-radius:6px;box-shadow:var(--shadow-md);white-space:nowrap}
+.toast{display:flex;gap:10px;align-items:flex-start;width:360px;max-width:100%;padding:12px 14px;background:var(--popover);border:1px solid var(--border);border-radius:var(--radius-lg);box-shadow:var(--shadow-lg);font-size:13px;line-height:18px}
+.toast .tt{font-weight:600;font-size:13.5px}
+
+/* ---------- dialog & sheet ---------- */
+.scrim{background:var(--overlay)}
+.dlg{background:var(--popover);border:1px solid var(--border);border-radius:var(--radius-xl);box-shadow:var(--shadow-lg);width:480px;max-width:100%;display:flex;flex-direction:column}
+.dlg-h{padding:20px 24px 0;display:flex;gap:12px;align-items:flex-start}
+.dlg-h .t{font:600 16px/24px var(--font-sans)}
+.dlg-h .d{font-size:13.5px;line-height:20px;color:var(--muted-foreground);margin-top:4px}
+.dlg-b{padding:16px 24px;display:flex;flex-direction:column;gap:14px}
+.dlg-f{padding:16px 24px;border-top:1px solid var(--border);display:flex;justify-content:flex-end;gap:8px;background:var(--dlg-foot)}
+.dlg-ic{width:36px;height:36px;border-radius:50%;flex:none;display:flex;align-items:center;justify-content:center;background:var(--crit-bg);color:var(--crit-fg)}
+.dlg-ic.warn{background:var(--warn-bg);color:var(--warn-fg)}
+.dlg-ic.info{background:var(--info-bg);color:var(--info-fg)}
+.dlg-ic.neutral{background:var(--muted);color:var(--muted-foreground)}
+.sheet{background:var(--popover);border-left:1px solid var(--border);box-shadow:var(--shadow-lg);display:flex;flex-direction:column}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:6px 16px;font-size:13px}
+.kv dt{color:var(--muted-foreground)}
+.kv dd{margin:0;font-weight:500}
+ul.cons{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:6px;font-size:13px}
+ul.cons li{display:flex;gap:8px;align-items:flex-start}
+ul.cons li .ic{margin-top:2px;color:var(--muted-foreground)}
+
+/* ---------- table (shadcn Table) ---------- */
+.tbl-wrap{overflow-x:auto;min-width:0;position:relative}
+.tbl{width:100%;border-collapse:separate;border-spacing:0;font-size:13px;line-height:18px}
+.tbl th{height:36px;padding:0 12px;text-align:left;font:500 12px/16px var(--font-sans);color:var(--muted-foreground);border-bottom:1px solid var(--border);white-space:nowrap;background:var(--table-head)}
+.tbl th .ic{width:12px;height:12px;vertical-align:-1px;margin-left:2px}
+.tbl th.sorted{color:var(--foreground)}
+.tbl td{height:44px;padding:0 12px;border-bottom:1px solid var(--border);white-space:nowrap;vertical-align:middle}
+.tbl tr:last-child td{border-bottom:0}
+.tbl .r{text-align:right}
+.tbl td.r{font-variant-numeric:tabular-nums}
+.tbl tr.hover td{background:var(--row-hover)}
+.tbl tr.sel td{background:var(--row-selected)}
+.tbl tr.dim td{color:var(--subtle-foreground)}
+.tbl .sticky{position:sticky;left:0;background:var(--card);z-index:1;box-shadow:1px 0 0 var(--border)}
+.tbl tr.hover .sticky{background:var(--row-hover)}
+.tbl.dense td{height:36px}
+.tbl .grp th{height:28px;background:transparent;border-bottom:0;padding-bottom:0}
+.tbl .grp th .src{margin-left:0}
+.tbl .gl{box-shadow:inset 1px 0 0 var(--border)}
+.tbl a,.lnk{color:var(--foreground);text-decoration:underline;text-decoration-color:var(--border-strong);text-underline-offset:3px}
+.tbl-foot{display:flex;align-items:center;gap:12px;padding:10px 12px;border-top:1px solid var(--border);font-size:12.5px;color:var(--muted-foreground)}
+.fade-r{position:absolute;top:0;right:0;bottom:0;width:32px;background:linear-gradient(90deg,transparent,var(--card));pointer-events:none}
+/* narrow table: rows become stacked cards (< 768 px) */
+.ntbl{display:flex;flex-direction:column}
+.nrow{display:flex;flex-direction:column;gap:8px;padding:12px 14px;border-bottom:1px solid var(--border)}
+.nrow:last-child{border-bottom:0}
+.nrow .nh{display:flex;align-items:center;gap:8px;font-weight:600;font-size:14px}
+.nrow .nh .ic.chev{margin-left:auto;color:var(--subtle-foreground)}
+.nrow dl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 12px;margin:0}
+.nrow dl div{display:flex;flex-direction:column;min-width:0}
+.nrow dt{font-size:11.5px;line-height:16px;color:var(--muted-foreground)}
+.nrow dd{margin:0;font-size:13px;line-height:18px;font-weight:500;font-variant-numeric:tabular-nums}
+
+/* ---------- country & flag ---------- */
+.flag{width:20px;height:15px;border-radius:2px;flex:none;object-fit:cover;box-shadow:0 0 0 1px var(--flag-ring);display:inline-block;vertical-align:-3px}
+.flag.s16{width:16px;height:12px;vertical-align:-2px}
+.flag.s24{width:24px;height:18px}
+.flag.s40{width:40px;height:30px;border-radius:4px;vertical-align:0;margin-top:2px}
+.ctry{display:inline-flex;align-items:center;gap:8px;min-width:0;font-weight:500}
+.crow{display:grid;grid-template-columns:minmax(0,1.6fr) 64px minmax(0,1fr) 96px;align-items:center;gap:12px;min-height:44px;padding:6px 16px;border-bottom:1px solid var(--border);font-size:13px;line-height:16px}
+.crow:last-child{border-bottom:0}
+.crow.m{grid-template-columns:minmax(0,1fr) auto auto;row-gap:6px;padding:8px 16px}
+.crow.m .meter{grid-column:1/-1;order:3}
+.crow .rate{font-weight:600;font-variant-numeric:tabular-nums;text-align:right}
+.crow .n{color:var(--muted-foreground);font-variant-numeric:tabular-nums;text-align:right;font-size:12px}
+.crow.low .rate{color:var(--subtle-foreground);font-weight:500}
+.meter{height:6px;border-radius:3px;background:var(--meter-track);position:relative;overflow:visible}
+.meter>i{position:absolute;left:0;top:0;bottom:0;border-radius:3px;background-color:var(--crit-solid)}
+.meter>i.warn{background-color:var(--warn-solid)}
+.meter>i.ok{background-color:var(--ok-solid)}
+.meter>i.neutral{background-color:var(--neutral-solid)}
+.meter>b{position:absolute;top:-3px;bottom:-3px;width:2px;border-radius:1px;background:var(--foreground);opacity:.55}
+.meter.tall{height:8px;border-radius:4px}
+.meter.tall>i{border-radius:4px}
+.hgroup{display:flex;align-items:center;gap:8px;padding:10px 16px;background:var(--muted);font:600 12px/16px var(--font-sans);color:var(--muted-foreground);border-bottom:1px solid var(--border)}
+.oneline{display:flex;align-items:center;gap:14px;padding:10px 16px;font-size:13px;flex-wrap:wrap}
+.oneline>span{display:inline-flex;align-items:center;gap:6px}
+
+/* ---------- alert inbox ---------- */
+.inbox-it{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:12px;padding:12px 16px;border-bottom:1px solid var(--border);align-items:flex-start}
+.inbox-it:last-child{border-bottom:0}
+.sev{width:28px;height:28px;border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;flex:none}
+.sev.crit{background:var(--crit-bg);color:var(--crit-fg)}
+.sev.warn{background:var(--warn-bg);color:var(--warn-fg)}
+.sev.info{background:var(--info-bg);color:var(--info-fg)}
+.sev.ok{background:var(--ok-bg);color:var(--ok-fg)}
+.inbox-it .ttl{font-weight:600;font-size:13.5px;line-height:20px;display:flex;align-items:center;gap:8px}
+.inbox-it .ttl .new{width:7px;height:7px;border-radius:50%;background:var(--info-solid);flex:none}
+.inbox-it .ctx{font-size:12.5px;line-height:18px;color:var(--muted-foreground);display:flex;align-items:center;gap:6px 10px;flex-wrap:wrap;margin-top:2px}
+.inbox-it .ctx>span{display:inline-flex;align-items:center;gap:5px}
+.inbox-it .when{font-size:12px;color:var(--muted-foreground);white-space:nowrap;text-align:right}
+.inbox-it .acts{display:flex;gap:6px;margin-top:8px}
+.inbox-it.ack{opacity:.72}
+.inbox-it.ack .ttl{font-weight:500}
+
+/* ---------- charts (Recharts look) ---------- */
+.chart{position:relative}
+.chart svg{display:block;overflow:visible}
+.chart .grid line{stroke:var(--chart-grid);stroke-width:1;stroke-dasharray:3 3}
+.chart .axis text{fill:var(--chart-axis);font:400 11px var(--font-sans);font-variant-numeric:tabular-nums}
+.chart .axis line.base{stroke:var(--chart-baseline)}
+.chart .target{stroke:var(--chart-target);stroke-width:1.5;stroke-dasharray:5 4}
+.chart .tlabel{fill:var(--chart-target);font:500 11px var(--font-sans)}
+.chart .ln{fill:none;stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
+.chart .cross{stroke:var(--chart-axis);stroke-width:1}
+.chart .mk{stroke:var(--card);stroke-width:2}
+.chart .mark-ev line{stroke:var(--chart-event);stroke-width:1}
+.chart .mark-ev text{fill:var(--chart-event);font:500 10.5px var(--font-sans)}
+.chart .dlbl{font:500 11px var(--font-sans);fill:var(--foreground)}
+.ctip{position:absolute;background:var(--popover);border:1px solid var(--border);border-radius:var(--radius-md);box-shadow:var(--shadow-md);padding:8px 10px;font-size:12px;line-height:18px;min-width:160px}
+.ctip .h{font-weight:600;margin-bottom:4px}
+.ctip .r{display:flex;align-items:center;gap:8px}
+.ctip .r b{margin-left:auto;font-weight:600;font-variant-numeric:tabular-nums}
+.lg{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12px;color:var(--muted-foreground)}
+.lg span{display:inline-flex;align-items:center;gap:6px}
+.sw-l{width:10px;height:10px;border-radius:2px;flex:none}
+.sw-ln{width:14px;height:2px;border-radius:1px;flex:none}
+.uptime{display:flex;gap:1px;height:28px;align-items:stretch;min-width:0}
+.uptime i{flex:1 1 0;border-radius:1px;background:var(--ok-solid);min-width:0}
+.uptime i.w{background:var(--warn-solid)}
+.uptime i.c{background:var(--crit-solid)}
+.uptime i.m{background:var(--neutral-solid)}
+.uptime i.n{background:transparent;box-shadow:inset 0 0 0 1px var(--border-strong)}
+
+/* ---------- ladder order editor ---------- */
+.rung{display:grid;grid-template-columns:16px 22px minmax(0,1fr) 108px 36px;align-items:center;gap:10px;min-height:56px;padding:8px 12px;border:1px solid var(--border);border-radius:var(--radius-md);background:var(--card)}
+.rung-head{display:grid;grid-template-columns:16px 22px minmax(0,1fr) 108px 36px;gap:10px;padding:0 13px;font-size:12px;line-height:16px;color:var(--muted-foreground)}
+.rung .h{color:var(--subtle-foreground);cursor:grab}
+.rung .no{width:22px;height:22px;border-radius:50%;background:var(--muted);display:flex;align-items:center;justify-content:center;font:600 11px/1 var(--font-sans)}
+.rung .nm{font-weight:600;font-size:13.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rung .sub{font-size:12px;color:var(--muted-foreground)}
+.rung .ev{display:flex;flex-direction:column;gap:4px;font-size:12px;line-height:16px;min-width:0}
+.rung .ev .n{color:var(--muted-foreground);font-size:11px;font-variant-numeric:tabular-nums}
+.rung.off{background:var(--muted);border-style:dashed}
+.rung.off .nm{color:var(--muted-foreground);text-decoration:line-through;text-decoration-color:var(--border-strong)}
+.rung.moved{box-shadow:inset 3px 0 0 var(--info-solid)}
+.rung.drag{box-shadow:var(--shadow-lg);transform:rotate(-.6deg);border-color:var(--ring)}
+.rung.drop{min-height:0;height:6px;border:0;border-top:2px dashed var(--ring);border-radius:0;background:none;padding:0}
+.diff{display:grid;grid-template-columns:1fr 24px 1fr;gap:8px;align-items:start;font-size:13px}
+.diff ol{margin:0;padding:0 0 0 18px;display:flex;flex-direction:column;gap:4px}
+.diff .old{color:var(--muted-foreground)}
+.diff .chg{background:var(--info-bg);color:var(--info-fg);border-radius:3px;padding:0 4px}
+
+/* ---------- design-page helpers (not product UI) ---------- */
+.pv{padding:20px 24px;background:var(--background);color:var(--foreground)}
+.pv+.pv{border-top:1px solid var(--border)}
+.pv-tag{font:600 11px/16px var(--font-sans);letter-spacing:.06em;text-transform:uppercase;color:var(--subtle-foreground);margin-bottom:12px;display:flex;gap:8px;align-items:center}
+.pv-cap{font-size:12px;line-height:16px;color:var(--muted-foreground);margin:16px 0 8px}
+.pv-cap:first-child{margin-top:0}
+.pv-grid{display:grid;gap:12px}
+.pv-l{font:500 11px/14px var(--font-mono);color:var(--subtle-foreground);margin-top:6px}
+
+/* ---------- relation view (App server list) ---------- */
+.rel{display:grid;grid-template-columns:minmax(0,1fr) 56px minmax(0,1fr) 56px minmax(0,1fr);align-items:start}
+.rel-col{display:flex;flex-direction:column;gap:8px;min-width:0}
+.rel-h{font:600 12px/16px var(--font-sans);color:var(--muted-foreground);height:28px;display:flex;align-items:center;gap:6px}
+.rnode{height:56px;display:flex;flex-direction:column;justify-content:center;gap:2px;padding:0 12px;border:1px solid var(--border);border-radius:var(--radius-md);background:var(--card);min-width:0}
+.rnode .t{display:flex;align-items:center;gap:6px;font-weight:600;font-size:13px;line-height:18px;min-width:0}
+.rnode .s{font-size:11.5px;line-height:16px;color:var(--muted-foreground);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rnode.on{border-color:var(--info-solid);box-shadow:0 0 0 3px var(--ring-soft)}
+.rnode.dim{opacity:.55}
+.rnode.bad{box-shadow:inset 3px 0 0 var(--crit-solid)}
+.rnode.on.bad{box-shadow:inset 3px 0 0 var(--crit-solid),0 0 0 3px var(--ring-soft)}
+.rnode.more{border-style:dashed;background:transparent;color:var(--muted-foreground);font-size:12.5px}
+.rel svg path{fill:none;stroke:var(--border-strong);stroke-width:1.5}
+.rel svg path.on{stroke:var(--info-solid);stroke-width:2}
+.tbl td .ctry,.tbl td>.row{vertical-align:middle}
+
+</style>
+</helmet>
+<div class="cc light frame" style="width:1440px;min-height:0px;position:relative;overflow:hidden">
+<div class="shell"><aside class="sb"><div class="sb-brand"><div class="logo"><svg class="ic s14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2" ry="2" /> <circle cx="9" cy="9" r="2" /> <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" /></svg></div><div class="col" style="min-width:0"><span class="nm trunc">Brand name</span><span class="env">Control Center</span></div></div><nav class="sb-nav"><div class="sb-grp"><div class="sb-it"><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="7" height="9" x="3" y="3" rx="1" /> <rect width="7" height="5" x="14" y="3" rx="1" /> <rect width="7" height="9" x="14" y="12" rx="1" /> <rect width="7" height="5" x="3" y="16" rx="1" /></svg><span class="trunc">Overview</span></div></div><div class="sb-grp"><div class="sb-gl">Countries</div><div class="sb-it"><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" /> <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" /> <path d="M2 12h20" /></svg><span class="trunc">Countries</span><span class="chip count solid-crit">4</span></div><div class="sb-it"><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="4.5" r="2.5" /> <path d="m10.2 6.3-3.9 3.9" /> <circle cx="4.5" cy="12" r="2.5" /> <path d="M7 12h10" /> <circle cx="19.5" cy="12" r="2.5" /> <path d="m13.8 17.7 3.9-3.9" /> <circle cx="12" cy="19.5" r="2.5" /></svg><span class="trunc">Connection Ladder</span></div><div class="sb-it"><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15.686 15A14.5 14.5 0 0 1 12 22a14.5 14.5 0 0 1 0-20 10 10 0 1 0 9.542 13" /> <path d="M2 12h8.5" /> <path d="M20 6V4a2 2 0 1 0-4 0v2" /> <rect width="8" height="5" x="14" y="6" rx="1" /></svg><span class="trunc">API domains</span></div></div><div class="sb-grp"><div class="sb-gl">Fleet</div><div class="sb-it"><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="8" x="2" y="2" rx="2" ry="2" /> <rect width="20" height="8" x="2" y="14" rx="2" ry="2" /> <line x1="6" x2="6.01" y1="6" y2="6" /> <line x1="6" x2="6.01" y1="18" y2="18" /></svg><span class="trunc">Servers</span></div><div class="sb-it"><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12h-8" /> <path d="M21 6H8" /> <path d="M21 18h-8" /> <path d="M3 6v4c0 1.1.9 2 2 2h3" /> <path d="M3 10v6c0 1.1.9 2 2 2h3" /></svg><span class="trunc">App server list</span></div><div class="sb-it on"><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2" /></svg><span class="trunc">Uptime</span></div><div class="sb-it"><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" /></svg><span class="trunc">Provider accounts</span></div></div><div class="sb-grp"><div class="sb-gl">Users & Support</div><div class="sb-it"><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /> <circle cx="9" cy="7" r="4" /> <path d="M22 21v-2a4 4 0 0 0-3-3.87" /> <path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg><span class="trunc">Users</span></div><div class="sb-it"><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" /></svg><span class="trunc">Support</span><span class="chip count ">12</span></div><div class="sb-it"><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" /> <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" /></svg><span class="trunc">Notifications</span></div></div><div class="sb-grp"><div class="sb-gl">Analytics</div><div class="sb-it"><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v16a2 2 0 0 0 2 2h16" /> <path d="M18 17V9" /> <path d="M13 17V5" /> <path d="M8 17v-3" /></svg><span class="trunc">App reports</span></div><div class="sb-it"><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 9-6 6" /> <path d="M2.586 16.726A2 2 0 0 1 2 15.312V8.688a2 2 0 0 1 .586-1.414l4.688-4.688A2 2 0 0 1 8.688 2h6.624a2 2 0 0 1 1.414.586l4.688 4.688A2 2 0 0 1 22 8.688v6.624a2 2 0 0 1-.586 1.414l-4.688 4.688a2 2 0 0 1-1.414.586H8.688a2 2 0 0 1-1.414-.586z" /> <path d="m9 9 6 6" /></svg><span class="trunc">Connect failures</span></div><div class="sb-it"><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="10" x2="14" y1="2" y2="2" /> <line x1="12" x2="15" y1="14" y2="11" /> <circle cx="12" cy="14" r="8" /></svg><span class="trunc">Connect time by build</span></div><div class="sb-it"><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12c.552 0 1.005-.449.95-.998a10 10 0 0 0-8.953-8.951c-.55-.055-.998.398-.998.95v8a1 1 0 0 0 1 1z" /> <path d="M21.21 15.89A10 10 0 1 1 8 2.83" /></svg><span class="trunc">Usage & protocols</span></div><div class="sb-it"><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="15" x="2" y="7" rx="2" ry="2" /> <polyline points="17 2 12 7 7 2" /></svg><span class="trunc">Ads</span></div></div><div class="sb-grp"><div class="sb-gl">System</div><div class="sb-it"><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" /> <path d="M3 3v5h5" /> <path d="M12 7v5l4 2" /></svg><span class="trunc">Change history</span></div><div class="sb-it"><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="20" x="5" y="2" rx="2" ry="2" /> <path d="M12 18h.01" /></svg><span class="trunc">App versions & routes</span></div><div class="sb-it"><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19.07 4.93A10 10 0 0 0 6.99 3.34" /> <path d="M4 6h.01" /> <path d="M2.29 9.62A10 10 0 1 0 21.31 8.35" /> <path d="M16.24 7.76A6 6 0 1 0 8.23 16.67" /> <path d="M12 18h.01" /> <path d="M17.99 11.66A6 6 0 0 1 15.77 16.67" /> <circle cx="12" cy="12" r="2" /> <path d="m13.41 10.59 5.66-5.66" /></svg><span class="trunc">Reachability rules</span></div><div class="sb-it"><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 14 4-4" /> <path d="M3.34 19a10 10 0 1 1 17.32 0" /></svg><span class="trunc">API response time</span></div></div></nav><div class="sb-foot">panel 3.18.0 · api 2.41.2<br>worker 1.92.0</div></aside><div class="main"><header class="hdr"><span class="btn ghost icon sm" style="margin-left:-8px"><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2" /> <path d="M9 3v18" /></svg></span><div class="vdivider" style="height:20px;align-self:center"></div><nav class="crumb sp"><span class="trunc">Fleet</span><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg><span class="cur trunc">Uptime</span></nav><span class="alerts-btn"><svg class="ic s14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" /> <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" /> <path d="M4 2C2.8 3.7 2 5.7 2 8" /> <path d="M22 8c0-2.3-.8-4.3-2-6" /></svg><b class="num">5</b> open alerts</span><div class="seg"><span class="on">EN</span><span>TR</span></div><span class="btn outline icon sm"><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8a2.83 2.83 0 0 0 4 4 4 4 0 1 1-4-4" /> <path d="M12 2v2" /> <path d="M12 20v2" /> <path d="m4.9 4.9 1.4 1.4" /> <path d="m17.7 17.7 1.4 1.4" /> <path d="M2 12h2" /> <path d="M20 12h2" /> <path d="m6.3 17.7-1.4 1.4" /> <path d="m19.1 4.9-1.4 1.4" /></svg></span><div class="avatar">OP</div></header><main class="content"><div class="ph"><div class="sp"><h1 class="t-h1">Uptime</h1><p class="q">Did each server meet 99.9 % this month, and when was it down?</p></div><div class="acts"><span class="segm"><span class="on">November 2026</span><span class="">October</span><span class="">September</span></span></div></div><div style="display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px;min-width:0;align-items:start;align-items:stretch"><div class="card kpi alert"><div class="lbl">Servers below 99.9 % </div><div class="val"><span class="t-kpi">1</span><span class="unit">/ 43</span></div><div class="foot">frankfurt-3 · 99.20 %</div></div><div class="card kpi "><div class="lbl">Fleet average </div><div class="val"><span class="t-kpi">99.98</span><span class="unit">%</span></div><div class="foot">November so far · 14 days</div></div><div class="card kpi "><div class="lbl">Down time · total </div><div class="val"><span class="t-kpi">97</span><span class="unit">min</span></div><div class="foot">4 incidents · 2 servers</div></div><div class="card kpi "><div class="lbl">Maintenance </div><div class="val"><span class="t-kpi">1</span><span class="unit">window</span></div><div class="foot">Next: london-2 · 18 Nov 02:00</div></div><div class="card kpi" style="border-style:dashed;box-shadow:none"><div class="lbl">Breach alerts </div><div class="val"><span class="t-kpi subtle">—</span></div><div class="foot"><svg class="ic s12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.1 2.182a10 10 0 0 1 3.8 0" /> <path d="M13.9 21.818a10 10 0 0 1-3.8 0" /> <path d="M17.609 3.721a10 10 0 0 1 2.69 2.7" /> <path d="M2.182 13.9a10 10 0 0 1 0-3.8" /> <path d="M20.279 17.609a10 10 0 0 1-2.7 2.69" /> <path d="M21.818 10.1a10 10 0 0 1 0 3.8" /> <path d="M3.721 6.391a10 10 0 0 1 2.7-2.69" /> <path d="M6.391 20.279a10 10 0 0 1-2.69-2.7" /></svg> Needs alert rules (B5)</div></div></div><section class="card "><div class="card-h"><div class="sp" style="min-width:0"><div class="row wrap" style="gap:6px 8px"><span class="ttl">43 servers · November</span></div><div class="desc">Worst first. Maintenance windows do not count as down time. A row opens Server 360 › Uptime.</div></div><span class="segm"><span class="on">This month</span><span class="">Last month</span><span class="">90 d</span></span><span class="btn outline sm"><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /> <polyline points="7 10 12 15 17 10" /> <line x1="12" x2="12" y1="15" y2="3" /></svg>CSV</span></div><div style="margin-top:12px"><div class="tbl-wrap"><table class="tbl"><thead><tr><th class="  ">Server</th><th class="r  ">Uptime</th><th class="  ">Target</th><th class="r  ">Down</th><th class="r  ">Incidents</th><th class="  ">Last 30 days</th></tr></thead><tbody><tr class=""><td class="  "><span class="row" style="gap:8px"><img class="flag " src="../../design-system/project/assets/Flags/DE.svg" alt=""><a style="font-weight:600">frankfurt-3</a></span></td><td class="r  "><b class="num">99.20 %</b></td><td class="  "><span class="chip crit"><span class=dot></span>Below 99.9 %</span></td><td class="r  ">62 min</td><td class="r  ">2</td><td class="  "><div style="width:300px"><div class="uptime"><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class="w"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class="c"></i><i class="c"></i></div></div></td></tr><tr class=""><td class="  "><span class="row" style="gap:8px"><img class="flag " src="../../design-system/project/assets/Flags/GB.svg" alt=""><a style="font-weight:600">london-2</a></span></td><td class="r  "><b class="num">99.95 %</b></td><td class="  "><span class="chip ok"><span class=dot></span>Meets 99.9 %</span></td><td class="r  ">22 min</td><td class="r  ">1</td><td class="  "><div style="width:300px"><div class="uptime"><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class="m"></i><i class=""></i><i class=""></i><i class=""></i><i class="m"></i></div></div></td></tr><tr class=""><td class="  "><span class="row" style="gap:8px"><img class="flag " src="../../design-system/project/assets/Flags/NL.svg" alt=""><a style="font-weight:600">amsterdam-1</a></span></td><td class="r  "><b class="num">99.97 %</b></td><td class="  "><span class="chip ok"><span class=dot></span>Meets 99.9 %</span></td><td class="r  ">13 min</td><td class="r  ">1</td><td class="  "><div style="width:300px"><div class="uptime"><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class="w"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div></div></td></tr><tr class=""><td class="  "><span class="row" style="gap:8px"><img class="flag " src="../../design-system/project/assets/Flags/TR.svg" alt=""><a style="font-weight:600">istanbul-2</a></span></td><td class="r  "><b class="num">100 %</b></td><td class="  "><span class="chip ok"><span class=dot></span>Meets 99.9 %</span></td><td class="r  ">0 min</td><td class="r  ">0</td><td class="  "><div style="width:300px"><div class="uptime"><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div></div></td></tr><tr class=""><td class="  "><span class="row" style="gap:8px"><img class="flag " src="../../design-system/project/assets/Flags/AE.svg" alt=""><a style="font-weight:600">dubai-1</a></span></td><td class="r  "><b class="num">100 %</b></td><td class="  "><span class="chip ok"><span class=dot></span>Meets 99.9 %</span></td><td class="r  ">0 min</td><td class="r  ">0</td><td class="  "><div style="width:300px"><div class="uptime"><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div></div></td></tr><tr class=""><td class="  "><span class="row" style="gap:8px"><img class="flag " src="../../design-system/project/assets/Flags/SG.svg" alt=""><a style="font-weight:600">singapore-1</a></span></td><td class="r  "><b class="num">100 %</b></td><td class="  "><span class="chip ok"><span class=dot></span>Meets 99.9 %</span></td><td class="r  ">0 min</td><td class="r  ">0</td><td class="  "><div style="width:300px"><div class="uptime"><i class="n"></i><i class="n"></i><i class="n"></i><i class="n"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div></div></td></tr></tbody></table></div><div class="lg" style="padding:10px 20px;border-top:1px solid var(--border)"><span><i class="sw-l" style="background:var(--ok-solid)"></i>Up</span><span><i class="sw-l" style="background:var(--warn-solid)"></i>Some down time</span><span><i class="sw-l" style="background:var(--crit-solid)"></i>Below 99.9 % that day</span><span><i class="sw-l" style="background:var(--muted-foreground)"></i>Maintenance (not counted)</span><span><i class="sw-l" style="background:var(--muted)"></i>No data</span></div></div><div class="card-f"><span>Rows 1–6 of 43</span><span class="sp"></span><span class="btn outline xs"><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6" /></svg></span><span class="btn outline xs"><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg></span></div></section><div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;min-width:0;align-items:start;"><section class="card "><div class="card-h"><div class="sp" style="min-width:0"><div class="row wrap" style="gap:6px 8px"><span class="ttl">Down times</span></div><div class="desc">Newest first.</div></div></div><div style="margin-top:12px"><div class="col"><div class="row" style="gap:12px;padding:10px 20px;border-bottom:1px solid var(--border);align-items:flex-start"><span class="dot" style="width:8px;height:8px;border-radius:50%;margin-top:6px;flex:none;background:var(--crit-solid)"></span><div class="sp" style="min-width:0"><div class="t-small" style="font-weight:500"><a>frankfurt-3</a> · Down · health check failed</div><div class="t-cap muted">Today 11:42 · Open · 41 min so far</div></div></div><div class="row" style="gap:12px;padding:10px 20px;border-bottom:1px solid var(--border);align-items:flex-start"><span class="dot" style="width:8px;height:8px;border-radius:50%;margin-top:6px;flex:none;background:var(--crit-solid)"></span><div class="sp" style="min-width:0"><div class="t-small" style="font-weight:500"><a>frankfurt-3</a> · Down · host did not answer</div><div class="t-cap muted">Yesterday 03:10 · 21 min</div></div></div><div class="row" style="gap:12px;padding:10px 20px;border-bottom:1px solid var(--border);align-items:flex-start"><span class="dot" style="width:8px;height:8px;border-radius:50%;margin-top:6px;flex:none;background:var(--warn-solid)"></span><div class="sp" style="min-width:0"><div class="t-small" style="font-weight:500"><a>amsterdam-1</a> · Down · openvpn stopped</div><div class="t-cap muted">12 Nov 14:05 · 13 min</div></div></div><div class="row" style="gap:12px;padding:10px 20px;border-bottom:1px solid var(--border);align-items:flex-start"><span class="dot" style="width:8px;height:8px;border-radius:50%;margin-top:6px;flex:none;background:var(--muted-foreground)"></span><div class="sp" style="min-width:0"><div class="t-small" style="font-weight:500"><a>london-2</a> · Maintenance · kernel update</div><div class="t-cap muted">9 Nov 02:00 · 22 min · not counted</div></div></div></div></div></section><section class="card "><div class="card-h"><div class="sp" style="min-width:0"><div class="row wrap" style="gap:6px 8px"><span class="ttl">Maintenance windows</span></div><div class="desc">Time in a window does not count against 99.9 %.</div></div><span class="btn outline sm"><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="M12 5v14" /></svg>Add window</span></div><div style="margin-top:12px"><div class="col"><div class="row" style="gap:12px;padding:12px 20px;border-bottom:1px solid var(--border)"><div class="sp" style="min-width:0"><div class="t-small" style="font-weight:500">london-2 · 18 Nov 02:00–02:30</div><div class="t-cap muted">Kernel update · by OP</div></div><span class="chip info">Planned</span><span class="btn ghost icon xs"><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="1" /> <circle cx="19" cy="12" r="1" /> <circle cx="5" cy="12" r="1" /></svg></span></div><div class="row" style="gap:12px;padding:12px 20px"><div class="sp" style="min-width:0"><div class="t-small" style="font-weight:500">london-2 · 9 Nov 02:00–02:22</div><div class="t-cap muted">Kernel update · by OP</div></div><span class="chip ">Done</span></div></div></div></section></div></main></div></div><div class="scrim" style="position:absolute;inset:0;z-index:6"></div><div style="position:absolute;inset:0;z-index:7;display:flex;align-items:flex-start;justify-content:center;padding-top:140px"><div class="dlg" style="width:520px"><div class="dlg-h"><div class="dlg-ic"><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" /></svg></div><div class="sp"><div class="t">Add maintenance window</div><div class="d">Down time in this window does not count against the 99.9 % target.</div></div></div><div class="dlg-b"><div class="col" style="gap:14px"><div class="fld"><label>Server</label><div class="inp">london-2<svg class="ic caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7 15 5 5 5-5" /> <path d="m7 9 5-5 5 5" /></svg></div></div><div class="row" style="gap:12px"><div class="fld sp"><label>Start (UTC)</label><div class="inp focus">18 Nov 2026 · 02:00</div></div><div class="fld sp"><label>End (UTC)</label><div class="inp">18 Nov 2026 · 02:30</div></div></div><div class="fld"><label>Reason</label><div class="inp">Kernel update</div><span class="help">Shown in Change history and in Server 360.</span></div></div></div><div class="dlg-f"><span class="btn outline">Cancel</span><span class="btn primary">Add window</span></div></div></div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1090}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>
