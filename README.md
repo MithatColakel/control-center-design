@@ -8,7 +8,7 @@ A static review copy of the VPN Control Center design, with a Figma-like viewer.
 
 ## Review
 
-- **Screens · Desktop 1440:** every frame at its place on the canvas. Scroll or drag to move, Ctrl/⌘ + scroll or pinch to zoom, double-click a frame to open it at full size.
+- **Screens · Desktop 1440 · Mobile 375:** every frame at its place on the canvas. The 375 px frames of Overview, User 360 and Support are in the "Mobile 375" rows below the desktop rows. Scroll or drag to move, Ctrl/⌘ + scroll or pinch to zoom, double-click a frame to open it at full size.
 - **Design system:** tokens, components and states, each with its notes, plus the guide.
 - **Comments:** press `C` and click a spot on a frame. Comments stay in your browser. *Comments › Copy all* gives a text with the frame names and spots to paste into the task.
 - **Links:** `#f=<frame>` selects a frame, `#open=<frame>` opens it, `#ds=<card>` opens a Design System card.

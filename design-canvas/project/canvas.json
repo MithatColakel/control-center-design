@@ -12,7 +12,7 @@
   "pages": [
     {
       "id": "desktop",
-      "name": "Desktop 1440"
+      "name": "Desktop 1440 · Mobile 375"
     }
   ],
   "boards": {
@@ -20,13 +20,13 @@
       "x": 0,
       "y": 0,
       "w": 1200,
-      "h": 755,
+      "h": 817,
       "page": "desktop",
       "title": "VPN Control Center · screens"
     },
     "Desktop-Overview-Default.dc.html": {
       "x": 0,
-      "y": 1115,
+      "y": 1177,
       "w": 1440,
       "h": 1348,
       "page": "desktop",
@@ -34,7 +34,7 @@
     },
     "Desktop-Overview-Acknowledged.dc.html": {
       "x": 1560,
-      "y": 1115,
+      "y": 1177,
       "w": 1440,
       "h": 1348,
       "page": "desktop",
@@ -42,7 +42,7 @@
     },
     "Desktop-Overview-AllClear.dc.html": {
       "x": 3120,
-      "y": 1115,
+      "y": 1177,
       "w": 1440,
       "h": 1140,
       "page": "desktop",
@@ -50,7 +50,7 @@
     },
     "Desktop-Overview-Loading.dc.html": {
       "x": 4680,
-      "y": 1115,
+      "y": 1177,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -58,7 +58,7 @@
     },
     "Desktop-Overview-CardError.dc.html": {
       "x": 6240,
-      "y": 1115,
+      "y": 1177,
       "w": 1440,
       "h": 1344,
       "page": "desktop",
@@ -66,7 +66,7 @@
     },
     "Desktop-Overview-Dark.dc.html": {
       "x": 7800,
-      "y": 1115,
+      "y": 1177,
       "w": 1440,
       "h": 1348,
       "page": "desktop",
@@ -74,7 +74,7 @@
     },
     "Desktop-Server360-Summary.dc.html": {
       "x": 0,
-      "y": 3063,
+      "y": 3125,
       "w": 1440,
       "h": 1392,
       "page": "desktop",
@@ -82,7 +82,7 @@
     },
     "Desktop-Server360-Down.dc.html": {
       "x": 1560,
-      "y": 3063,
+      "y": 3125,
       "w": 1440,
       "h": 1392,
       "page": "desktop",
@@ -90,7 +90,7 @@
     },
     "Desktop-Server360-Live.dc.html": {
       "x": 3120,
-      "y": 3063,
+      "y": 3125,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -98,7 +98,7 @@
     },
     "Desktop-Server360-Usage.dc.html": {
       "x": 4680,
-      "y": 3063,
+      "y": 3125,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -106,7 +106,7 @@
     },
     "Desktop-Server360-ConnectResults.dc.html": {
       "x": 6240,
-      "y": 3063,
+      "y": 3125,
       "w": 1440,
       "h": 1093,
       "page": "desktop",
@@ -114,7 +114,7 @@
     },
     "Desktop-Server360-Unreachable.dc.html": {
       "x": 7800,
-      "y": 3063,
+      "y": 3125,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -122,7 +122,7 @@
     },
     "Desktop-Server360-Uptime.dc.html": {
       "x": 9360,
-      "y": 3063,
+      "y": 3125,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -130,7 +130,7 @@
     },
     "Desktop-Server360-UsedBy.dc.html": {
       "x": 10920,
-      "y": 3063,
+      "y": 3125,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -138,7 +138,7 @@
     },
     "Desktop-Server360-ChangeHistory.dc.html": {
       "x": 12480,
-      "y": 3063,
+      "y": 3125,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -146,7 +146,7 @@
     },
     "Desktop-Server360-Manage.dc.html": {
       "x": 14040,
-      "y": 3063,
+      "y": 3125,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -154,7 +154,7 @@
     },
     "Desktop-Server360-Logs.dc.html": {
       "x": 15600,
-      "y": 3063,
+      "y": 3125,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -162,7 +162,7 @@
     },
     "Desktop-Server360-ConfirmRestartAll.dc.html": {
       "x": 17160,
-      "y": 3063,
+      "y": 3125,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -170,7 +170,7 @@
     },
     "Desktop-Server360-ConfirmRestartOne.dc.html": {
       "x": 18720,
-      "y": 3063,
+      "y": 3125,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -178,7 +178,7 @@
     },
     "Desktop-Server360-ConfirmStop.dc.html": {
       "x": 20280,
-      "y": 3063,
+      "y": 3125,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -186,7 +186,7 @@
     },
     "Desktop-Server360-ConfirmGitPull.dc.html": {
       "x": 21840,
-      "y": 3063,
+      "y": 3125,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -194,7 +194,7 @@
     },
     "Desktop-Server360-Checkout.dc.html": {
       "x": 23400,
-      "y": 3063,
+      "y": 3125,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -202,7 +202,7 @@
     },
     "Desktop-Server360-ConfirmUpdate.dc.html": {
       "x": 24960,
-      "y": 3063,
+      "y": 3125,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -210,7 +210,7 @@
     },
     "Desktop-Server360-ConfirmReinstall.dc.html": {
       "x": 26520,
-      "y": 3063,
+      "y": 3125,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -218,7 +218,7 @@
     },
     "Desktop-Server360-ConfirmDelete.dc.html": {
       "x": 28080,
-      "y": 3063,
+      "y": 3125,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -226,7 +226,7 @@
     },
     "Desktop-Server360-ConfirmDestroy.dc.html": {
       "x": 29640,
-      "y": 3063,
+      "y": 3125,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -234,7 +234,7 @@
     },
     "Desktop-Server360-BlockPair.dc.html": {
       "x": 31200,
-      "y": 3063,
+      "y": 3125,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -242,7 +242,7 @@
     },
     "Desktop-Server360-Dark.dc.html": {
       "x": 32760,
-      "y": 3063,
+      "y": 3125,
       "w": 1440,
       "h": 1392,
       "page": "desktop",
@@ -250,7 +250,7 @@
     },
     "Desktop-Country360-Default.dc.html": {
       "x": 0,
-      "y": 5055,
+      "y": 5117,
       "w": 1440,
       "h": 1929,
       "page": "desktop",
@@ -258,7 +258,7 @@
     },
     "Desktop-Country360-OrderChanges.dc.html": {
       "x": 1560,
-      "y": 5055,
+      "y": 5117,
       "w": 1440,
       "h": 1877,
       "page": "desktop",
@@ -266,7 +266,7 @@
     },
     "Desktop-Country360-EditOrder.dc.html": {
       "x": 3120,
-      "y": 5055,
+      "y": 5117,
       "w": 1440,
       "h": 1363,
       "page": "desktop",
@@ -274,7 +274,7 @@
     },
     "Desktop-Country360-Review.dc.html": {
       "x": 4680,
-      "y": 5055,
+      "y": 5117,
       "w": 1440,
       "h": 1929,
       "page": "desktop",
@@ -282,7 +282,7 @@
     },
     "Desktop-Country360-BlockPair.dc.html": {
       "x": 6240,
-      "y": 5055,
+      "y": 5117,
       "w": 1440,
       "h": 1929,
       "page": "desktop",
@@ -290,7 +290,7 @@
     },
     "Desktop-Country360-TooLittleData.dc.html": {
       "x": 7800,
-      "y": 5055,
+      "y": 5117,
       "w": 1440,
       "h": 1272,
       "page": "desktop",
@@ -298,7 +298,7 @@
     },
     "Desktop-Country360-Dark.dc.html": {
       "x": 9360,
-      "y": 5055,
+      "y": 5117,
       "w": 1440,
       "h": 1929,
       "page": "desktop",
@@ -306,7 +306,7 @@
     },
     "Desktop-AppServerList-Relation.dc.html": {
       "x": 0,
-      "y": 7584,
+      "y": 7646,
       "w": 1440,
       "h": 1393,
       "page": "desktop",
@@ -314,7 +314,7 @@
     },
     "Desktop-AppServerList-ListItems.dc.html": {
       "x": 1560,
-      "y": 7584,
+      "y": 7646,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -322,7 +322,7 @@
     },
     "Desktop-AppServerList-LoadBalancers.dc.html": {
       "x": 3120,
-      "y": 7584,
+      "y": 7646,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -330,7 +330,7 @@
     },
     "Desktop-AppServerList-AddListItem.dc.html": {
       "x": 4680,
-      "y": 7584,
+      "y": 7646,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -338,7 +338,7 @@
     },
     "Desktop-AppServerList-EditListItem.dc.html": {
       "x": 6240,
-      "y": 7584,
+      "y": 7646,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -346,7 +346,7 @@
     },
     "Desktop-AppServerList-ItemHistory.dc.html": {
       "x": 7800,
-      "y": 7584,
+      "y": 7646,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -354,7 +354,7 @@
     },
     "Desktop-AppServerList-DeleteListItem.dc.html": {
       "x": 9360,
-      "y": 7584,
+      "y": 7646,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -362,7 +362,7 @@
     },
     "Desktop-AppServerList-NewLB.dc.html": {
       "x": 10920,
-      "y": 7584,
+      "y": 7646,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -370,7 +370,7 @@
     },
     "Desktop-AppServerList-EditLB.dc.html": {
       "x": 12480,
-      "y": 7584,
+      "y": 7646,
       "w": 1440,
       "h": 1393,
       "page": "desktop",
@@ -378,7 +378,7 @@
     },
     "Desktop-AppServerList-DeleteLB.dc.html": {
       "x": 14040,
-      "y": 7584,
+      "y": 7646,
       "w": 1440,
       "h": 1393,
       "page": "desktop",
@@ -386,7 +386,7 @@
     },
     "Desktop-AppServerList-AddBackup.dc.html": {
       "x": 15600,
-      "y": 7584,
+      "y": 7646,
       "w": 1440,
       "h": 1393,
       "page": "desktop",
@@ -394,7 +394,7 @@
     },
     "Desktop-AppServerList-RemoveBackup.dc.html": {
       "x": 17160,
-      "y": 7584,
+      "y": 7646,
       "w": 1440,
       "h": 1393,
       "page": "desktop",
@@ -402,7 +402,7 @@
     },
     "Desktop-Countries-List.dc.html": {
       "x": 0,
-      "y": 9577,
+      "y": 9639,
       "w": 1440,
       "h": 1058,
       "page": "desktop",
@@ -410,7 +410,7 @@
     },
     "Desktop-Countries-UnreachablePairs.dc.html": {
       "x": 1560,
-      "y": 9577,
+      "y": 9639,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -418,7 +418,7 @@
     },
     "Desktop-Countries-ManualBlock.dc.html": {
       "x": 3120,
-      "y": 9577,
+      "y": 9639,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -426,7 +426,7 @@
     },
     "Desktop-Countries-NoMatch.dc.html": {
       "x": 4680,
-      "y": 9577,
+      "y": 9639,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -434,7 +434,7 @@
     },
     "Desktop-Countries-Terms.dc.html": {
       "x": 6240,
-      "y": 9577,
+      "y": 9639,
       "w": 1440,
       "h": 1058,
       "page": "desktop",
@@ -442,7 +442,7 @@
     },
     "Desktop-User360-Connections.dc.html": {
       "x": 0,
-      "y": 11235,
+      "y": 11297,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -450,7 +450,7 @@
     },
     "Desktop-User360-Logins.dc.html": {
       "x": 1560,
-      "y": 11235,
+      "y": 11297,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -458,7 +458,7 @@
     },
     "Desktop-User360-Purchases.dc.html": {
       "x": 3120,
-      "y": 11235,
+      "y": 11297,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -466,7 +466,7 @@
     },
     "Desktop-User360-Support.dc.html": {
       "x": 4680,
-      "y": 11235,
+      "y": 11297,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -474,7 +474,7 @@
     },
     "Desktop-User360-Notifications.dc.html": {
       "x": 6240,
-      "y": 11235,
+      "y": 11297,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -482,7 +482,7 @@
     },
     "Desktop-User360-Reports.dc.html": {
       "x": 7800,
-      "y": 11235,
+      "y": 11297,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -490,7 +490,7 @@
     },
     "Desktop-User360-SendPush.dc.html": {
       "x": 9360,
-      "y": 11235,
+      "y": 11297,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -498,7 +498,7 @@
     },
     "Desktop-User360-ConfirmDelete.dc.html": {
       "x": 10920,
-      "y": 11235,
+      "y": 11297,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -506,7 +506,7 @@
     },
     "Desktop-Support-Tickets.dc.html": {
       "x": 0,
-      "y": 12821,
+      "y": 12883,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -514,7 +514,7 @@
     },
     "Desktop-Support-ConfirmReply.dc.html": {
       "x": 1560,
-      "y": 12821,
+      "y": 12883,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -522,7 +522,7 @@
     },
     "Desktop-Support-Answered.dc.html": {
       "x": 3120,
-      "y": 12821,
+      "y": 12883,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -530,7 +530,7 @@
     },
     "Desktop-Support-Ratings.dc.html": {
       "x": 4680,
-      "y": 12821,
+      "y": 12883,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -538,7 +538,7 @@
     },
     "Desktop-Servers-List.dc.html": {
       "x": 0,
-      "y": 14407,
+      "y": 14469,
       "w": 1440,
       "h": 1189,
       "page": "desktop",
@@ -546,7 +546,7 @@
     },
     "Desktop-Servers-AddServer.dc.html": {
       "x": 1560,
-      "y": 14407,
+      "y": 14469,
       "w": 1440,
       "h": 1189,
       "page": "desktop",
@@ -554,7 +554,7 @@
     },
     "Desktop-Servers-AddExisting.dc.html": {
       "x": 3120,
-      "y": 14407,
+      "y": 14469,
       "w": 1440,
       "h": 1189,
       "page": "desktop",
@@ -562,7 +562,7 @@
     },
     "Desktop-Servers-AddManual.dc.html": {
       "x": 4680,
-      "y": 14407,
+      "y": 14469,
       "w": 1440,
       "h": 1189,
       "page": "desktop",
@@ -570,7 +570,7 @@
     },
     "Desktop-Servers-ConfirmCreate.dc.html": {
       "x": 6240,
-      "y": 14407,
+      "y": 14469,
       "w": 1440,
       "h": 1189,
       "page": "desktop",
@@ -578,7 +578,7 @@
     },
     "Desktop-Servers-Installing.dc.html": {
       "x": 7800,
-      "y": 14407,
+      "y": 14469,
       "w": 1440,
       "h": 1189,
       "page": "desktop",
@@ -586,7 +586,7 @@
     },
     "Desktop-Servers-ConfirmRollingUpdate.dc.html": {
       "x": 9360,
-      "y": 14407,
+      "y": 14469,
       "w": 1440,
       "h": 1189,
       "page": "desktop",
@@ -594,7 +594,7 @@
     },
     "Desktop-Servers-ConfirmDelete.dc.html": {
       "x": 10920,
-      "y": 14407,
+      "y": 14469,
       "w": 1440,
       "h": 1189,
       "page": "desktop",
@@ -602,7 +602,7 @@
     },
     "Desktop-Uptime-Month.dc.html": {
       "x": 0,
-      "y": 16196,
+      "y": 16258,
       "w": 1440,
       "h": 1090,
       "page": "desktop",
@@ -610,7 +610,7 @@
     },
     "Desktop-Uptime-AddWindow.dc.html": {
       "x": 1560,
-      "y": 16196,
+      "y": 16258,
       "w": 1440,
       "h": 1090,
       "page": "desktop",
@@ -618,7 +618,7 @@
     },
     "Desktop-Uptime-EditWindow.dc.html": {
       "x": 3120,
-      "y": 16196,
+      "y": 16258,
       "w": 1440,
       "h": 1090,
       "page": "desktop",
@@ -626,7 +626,7 @@
     },
     "Desktop-Uptime-DeleteWindow.dc.html": {
       "x": 4680,
-      "y": 16196,
+      "y": 16258,
       "w": 1440,
       "h": 1090,
       "page": "desktop",
@@ -634,7 +634,7 @@
     },
     "Desktop-Providers-List.dc.html": {
       "x": 0,
-      "y": 17886,
+      "y": 17948,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -642,7 +642,7 @@
     },
     "Desktop-Providers-AddAccount.dc.html": {
       "x": 1560,
-      "y": 17886,
+      "y": 17948,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -650,7 +650,7 @@
     },
     "Desktop-Providers-EditKey.dc.html": {
       "x": 3120,
-      "y": 17886,
+      "y": 17948,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -658,7 +658,7 @@
     },
     "Desktop-Providers-ConfirmDelete.dc.html": {
       "x": 4680,
-      "y": 17886,
+      "y": 17948,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -666,7 +666,7 @@
     },
     "Desktop-Providers-Empty.dc.html": {
       "x": 6240,
-      "y": 17886,
+      "y": 17948,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -674,7 +674,7 @@
     },
     "Desktop-Users-List.dc.html": {
       "x": 0,
-      "y": 19472,
+      "y": 19534,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -682,7 +682,7 @@
     },
     "Desktop-Users-Saved.dc.html": {
       "x": 1560,
-      "y": 19472,
+      "y": 19534,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -690,7 +690,7 @@
     },
     "Desktop-Users-SaveUser.dc.html": {
       "x": 3120,
-      "y": 19472,
+      "y": 19534,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -698,7 +698,7 @@
     },
     "Desktop-Users-NoMatch.dc.html": {
       "x": 4680,
-      "y": 19472,
+      "y": 19534,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -706,7 +706,7 @@
     },
     "Desktop-Notifications-List.dc.html": {
       "x": 0,
-      "y": 21058,
+      "y": 21120,
       "w": 1440,
       "h": 1100,
       "page": "desktop",
@@ -714,7 +714,7 @@
     },
     "Desktop-Notifications-EditRule.dc.html": {
       "x": 1560,
-      "y": 21058,
+      "y": 21120,
       "w": 1440,
       "h": 1100,
       "page": "desktop",
@@ -722,7 +722,7 @@
     },
     "Desktop-Notifications-Assistant.dc.html": {
       "x": 3120,
-      "y": 21058,
+      "y": 21120,
       "w": 1440,
       "h": 1100,
       "page": "desktop",
@@ -730,7 +730,7 @@
     },
     "Desktop-Notifications-Translations.dc.html": {
       "x": 4680,
-      "y": 21058,
+      "y": 21120,
       "w": 1440,
       "h": 1100,
       "page": "desktop",
@@ -738,7 +738,7 @@
     },
     "Desktop-Notifications-Placements.dc.html": {
       "x": 6240,
-      "y": 21058,
+      "y": 21120,
       "w": 1440,
       "h": 1100,
       "page": "desktop",
@@ -746,7 +746,7 @@
     },
     "Desktop-Notifications-Broadcast.dc.html": {
       "x": 7800,
-      "y": 21058,
+      "y": 21120,
       "w": 1440,
       "h": 1100,
       "page": "desktop",
@@ -754,7 +754,7 @@
     },
     "Desktop-Notifications-ConfirmBroadcast.dc.html": {
       "x": 9360,
-      "y": 21058,
+      "y": 21120,
       "w": 1440,
       "h": 1100,
       "page": "desktop",
@@ -762,7 +762,7 @@
     },
     "Desktop-Notifications-ConfirmRun.dc.html": {
       "x": 10920,
-      "y": 21058,
+      "y": 21120,
       "w": 1440,
       "h": 1100,
       "page": "desktop",
@@ -770,7 +770,7 @@
     },
     "Desktop-Notifications-ConfirmDelete.dc.html": {
       "x": 12480,
-      "y": 21058,
+      "y": 21120,
       "w": 1440,
       "h": 1100,
       "page": "desktop",
@@ -778,7 +778,7 @@
     },
     "Desktop-Notifications-NoMatch.dc.html": {
       "x": 14040,
-      "y": 21058,
+      "y": 21120,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -786,7 +786,7 @@
     },
     "Desktop-Reports-Default.dc.html": {
       "x": 0,
-      "y": 22758,
+      "y": 22820,
       "w": 1440,
       "h": 1555,
       "page": "desktop",
@@ -794,7 +794,7 @@
     },
     "Desktop-Reports-SessionTrace.dc.html": {
       "x": 1560,
-      "y": 22758,
+      "y": 22820,
       "w": 1440,
       "h": 1555,
       "page": "desktop",
@@ -802,7 +802,7 @@
     },
     "Desktop-Failures-Default.dc.html": {
       "x": 0,
-      "y": 24913,
+      "y": 24975,
       "w": 1440,
       "h": 1436,
       "page": "desktop",
@@ -810,7 +810,7 @@
     },
     "Desktop-ConnectTime-Default.dc.html": {
       "x": 0,
-      "y": 26949,
+      "y": 27011,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -818,7 +818,7 @@
     },
     "Desktop-ConnectTime-Error.dc.html": {
       "x": 1560,
-      "y": 26949,
+      "y": 27011,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -826,7 +826,7 @@
     },
     "Desktop-Usage-Default.dc.html": {
       "x": 0,
-      "y": 28535,
+      "y": 28597,
       "w": 1440,
       "h": 1556,
       "page": "desktop",
@@ -834,7 +834,7 @@
     },
     "Desktop-Ads-Default.dc.html": {
       "x": 0,
-      "y": 30691,
+      "y": 30753,
       "w": 1440,
       "h": 1093,
       "page": "desktop",
@@ -842,7 +842,7 @@
     },
     "Desktop-Ads-Empty.dc.html": {
       "x": 1560,
-      "y": 30691,
+      "y": 30753,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -850,7 +850,7 @@
     },
     "Desktop-ChangeHistory-List.dc.html": {
       "x": 0,
-      "y": 32384,
+      "y": 32446,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -858,7 +858,7 @@
     },
     "Desktop-ChangeHistory-NoMatch.dc.html": {
       "x": 1560,
-      "y": 32384,
+      "y": 32446,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -866,7 +866,7 @@
     },
     "Desktop-AppVersions-iOS.dc.html": {
       "x": 0,
-      "y": 33970,
+      "y": 34032,
       "w": 1440,
       "h": 1090,
       "page": "desktop",
@@ -874,7 +874,7 @@
     },
     "Desktop-AppVersions-Android.dc.html": {
       "x": 1560,
-      "y": 33970,
+      "y": 34032,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -882,7 +882,7 @@
     },
     "Desktop-AppVersions-macOS.dc.html": {
       "x": 3120,
-      "y": 33970,
+      "y": 34032,
       "w": 1440,
       "h": 986,
       "page": "desktop",
@@ -890,7 +890,7 @@
     },
     "Desktop-AppVersions-ConfirmMinimum.dc.html": {
       "x": 4680,
-      "y": 33970,
+      "y": 34032,
       "w": 1440,
       "h": 1090,
       "page": "desktop",
@@ -898,7 +898,7 @@
     },
     "Desktop-AppVersions-RouteError.dc.html": {
       "x": 6240,
-      "y": 33970,
+      "y": 34032,
       "w": 1440,
       "h": 1151,
       "page": "desktop",
@@ -906,7 +906,7 @@
     },
     "Desktop-ReachRules-Default.dc.html": {
       "x": 0,
-      "y": 35721,
+      "y": 35783,
       "w": 1440,
       "h": 1233,
       "page": "desktop",
@@ -914,7 +914,7 @@
     },
     "Desktop-ReachRules-ConfirmSteer.dc.html": {
       "x": 1560,
-      "y": 35721,
+      "y": 35783,
       "w": 1440,
       "h": 1233,
       "page": "desktop",
@@ -922,7 +922,7 @@
     },
     "Desktop-ReachRules-ConfirmRuleOff.dc.html": {
       "x": 3120,
-      "y": 35721,
+      "y": 35783,
       "w": 1440,
       "h": 1233,
       "page": "desktop",
@@ -930,7 +930,7 @@
     },
     "Desktop-ApiHealth-Default.dc.html": {
       "x": 0,
-      "y": 37554,
+      "y": 37616,
       "w": 1440,
       "h": 1219,
       "page": "desktop",
@@ -938,7 +938,7 @@
     },
     "Desktop-ApiHealth-Error.dc.html": {
       "x": 1560,
-      "y": 37554,
+      "y": 37616,
       "w": 1440,
       "h": 1151,
       "page": "desktop",
@@ -946,7 +946,7 @@
     },
     "Desktop-Ladder-Fleet.dc.html": {
       "x": 0,
-      "y": 39373,
+      "y": 39435,
       "w": 1440,
       "h": 2539,
       "page": "desktop",
@@ -954,7 +954,7 @@
     },
     "Desktop-Ladder-DeadEndsByServer.dc.html": {
       "x": 1560,
-      "y": 39373,
+      "y": 39435,
       "w": 1440,
       "h": 2539,
       "page": "desktop",
@@ -962,7 +962,7 @@
     },
     "Desktop-Ladder-Timeline.dc.html": {
       "x": 3120,
-      "y": 39373,
+      "y": 39435,
       "w": 1440,
       "h": 2539,
       "page": "desktop",
@@ -970,7 +970,7 @@
     },
     "Desktop-Ladder-EditDefault.dc.html": {
       "x": 4680,
-      "y": 39373,
+      "y": 39435,
       "w": 1440,
       "h": 2539,
       "page": "desktop",
@@ -978,7 +978,7 @@
     },
     "Desktop-Ladder-ReviewDefault.dc.html": {
       "x": 6240,
-      "y": 39373,
+      "y": 39435,
       "w": 1440,
       "h": 2539,
       "page": "desktop",
@@ -986,7 +986,7 @@
     },
     "Desktop-Ladder-WhyChanged.dc.html": {
       "x": 7800,
-      "y": 39373,
+      "y": 39435,
       "w": 1440,
       "h": 2539,
       "page": "desktop",
@@ -994,7 +994,7 @@
     },
     "Desktop-Ladder-PickCountry.dc.html": {
       "x": 9360,
-      "y": 39373,
+      "y": 39435,
       "w": 1440,
       "h": 2539,
       "page": "desktop",
@@ -1002,7 +1002,7 @@
     },
     "Desktop-ApiDomains-Default.dc.html": {
       "x": 0,
-      "y": 42512,
+      "y": 42574,
       "w": 1440,
       "h": 2347,
       "page": "desktop",
@@ -1010,7 +1010,7 @@
     },
     "Desktop-ApiDomains-TrackDomain.dc.html": {
       "x": 1560,
-      "y": 42512,
+      "y": 42574,
       "w": 1440,
       "h": 2347,
       "page": "desktop",
@@ -1018,7 +1018,7 @@
     },
     "Desktop-ApiDomains-StopTracking.dc.html": {
       "x": 3120,
-      "y": 42512,
+      "y": 42574,
       "w": 1440,
       "h": 2347,
       "page": "desktop",
@@ -1026,7 +1026,7 @@
     },
     "Desktop-ApiDomains-EditDirectory.dc.html": {
       "x": 4680,
-      "y": 42512,
+      "y": 42574,
       "w": 1440,
       "h": 2347,
       "page": "desktop",
@@ -1034,7 +1034,7 @@
     },
     "Desktop-ApiDomains-RemoveHost.dc.html": {
       "x": 6240,
-      "y": 42512,
+      "y": 42574,
       "w": 1440,
       "h": 2347,
       "page": "desktop",
@@ -1042,7 +1042,7 @@
     },
     "Desktop-ApiDomains-PreviewJSON.dc.html": {
       "x": 7800,
-      "y": 42512,
+      "y": 42574,
       "w": 1440,
       "h": 2347,
       "page": "desktop",
@@ -1050,7 +1050,7 @@
     },
     "Desktop-ApiDomains-ConfirmPublish.dc.html": {
       "x": 9360,
-      "y": 42512,
+      "y": 42574,
       "w": 1440,
       "h": 2347,
       "page": "desktop",
@@ -1058,7 +1058,7 @@
     },
     "Desktop-ApiDomains-ConfirmBan.dc.html": {
       "x": 10920,
-      "y": 42512,
+      "y": 42574,
       "w": 1440,
       "h": 2347,
       "page": "desktop",
@@ -1066,7 +1066,7 @@
     },
     "Desktop-ApiDomains-CountryList.dc.html": {
       "x": 12480,
-      "y": 42512,
+      "y": 42574,
       "w": 1440,
       "h": 2347,
       "page": "desktop",
@@ -1074,7 +1074,7 @@
     },
     "Desktop-ApiDomains-ConfirmLiftBan.dc.html": {
       "x": 14040,
-      "y": 42512,
+      "y": 42574,
       "w": 1440,
       "h": 2347,
       "page": "desktop",
@@ -1082,7 +1082,7 @@
     },
     "Desktop-ApiDomains-PublishFailed.dc.html": {
       "x": 15600,
-      "y": 42512,
+      "y": 42574,
       "w": 1440,
       "h": 2550,
       "page": "desktop",
@@ -1090,7 +1090,7 @@
     },
     "Desktop-ApiDomains-Partial.dc.html": {
       "x": 17160,
-      "y": 42512,
+      "y": 42574,
       "w": 1440,
       "h": 2413,
       "page": "desktop",
@@ -1098,7 +1098,7 @@
     },
     "Desktop-Login-Default.dc.html": {
       "x": 0,
-      "y": 45662,
+      "y": 45724,
       "w": 1440,
       "h": 900,
       "page": "desktop",
@@ -1106,7 +1106,7 @@
     },
     "Desktop-Login-Error.dc.html": {
       "x": 1560,
-      "y": 45662,
+      "y": 45724,
       "w": 1440,
       "h": 900,
       "page": "desktop",
@@ -1114,7 +1114,7 @@
     },
     "Desktop-Login-Busy.dc.html": {
       "x": 3120,
-      "y": 45662,
+      "y": 45724,
       "w": 1440,
       "h": 900,
       "page": "desktop",
@@ -1122,11 +1122,171 @@
     },
     "Desktop-Login-Dark.dc.html": {
       "x": 4680,
-      "y": 45662,
+      "y": 45724,
       "w": 1440,
       "h": 900,
       "page": "desktop",
       "title": "Login · dark"
+    },
+    "Mobile-Overview-Default.dc.html": {
+      "x": 0,
+      "y": 47224,
+      "w": 375,
+      "h": 3447,
+      "page": "desktop",
+      "title": "Overview · 375 · default"
+    },
+    "Mobile-Overview-Acknowledged.dc.html": {
+      "x": 495,
+      "y": 47224,
+      "w": 375,
+      "h": 3304,
+      "page": "desktop",
+      "title": "Overview · 375 · inbox, Acknowledged"
+    },
+    "Mobile-Overview-AllClear.dc.html": {
+      "x": 990,
+      "y": 47224,
+      "w": 375,
+      "h": 2641,
+      "page": "desktop",
+      "title": "Overview · 375 · all clear (empty inbox)"
+    },
+    "Mobile-Overview-Loading.dc.html": {
+      "x": 1485,
+      "y": 47224,
+      "w": 375,
+      "h": 1766,
+      "page": "desktop",
+      "title": "Overview · 375 · loading"
+    },
+    "Mobile-Overview-CardError.dc.html": {
+      "x": 1980,
+      "y": 47224,
+      "w": 375,
+      "h": 3080,
+      "page": "desktop",
+      "title": "Overview · 375 · one card failed"
+    },
+    "Mobile-Overview-Dark.dc.html": {
+      "x": 2475,
+      "y": 47224,
+      "w": 375,
+      "h": 3447,
+      "page": "desktop",
+      "title": "Overview · 375 · dark"
+    },
+    "Mobile-Overview-Menu.dc.html": {
+      "x": 2970,
+      "y": 47224,
+      "w": 375,
+      "h": 812,
+      "page": "desktop",
+      "title": "Overview · 375 · menu open (narrow only)"
+    },
+    "Mobile-User360-Connections.dc.html": {
+      "x": 0,
+      "y": 51271,
+      "w": 375,
+      "h": 2372,
+      "page": "desktop",
+      "title": "User 360 · 375 · connections (trace open)"
+    },
+    "Mobile-User360-Logins.dc.html": {
+      "x": 495,
+      "y": 51271,
+      "w": 375,
+      "h": 2013,
+      "page": "desktop",
+      "title": "User 360 · 375 · Logins"
+    },
+    "Mobile-User360-Purchases.dc.html": {
+      "x": 990,
+      "y": 51271,
+      "w": 375,
+      "h": 1599,
+      "page": "desktop",
+      "title": "User 360 · 375 · purchases"
+    },
+    "Mobile-User360-Support.dc.html": {
+      "x": 1485,
+      "y": 51271,
+      "w": 375,
+      "h": 1930,
+      "page": "desktop",
+      "title": "User 360 · 375 · Support"
+    },
+    "Mobile-User360-Notifications.dc.html": {
+      "x": 1980,
+      "y": 51271,
+      "w": 375,
+      "h": 2011,
+      "page": "desktop",
+      "title": "User 360 · 375 · Notifications"
+    },
+    "Mobile-User360-Reports.dc.html": {
+      "x": 2475,
+      "y": 51271,
+      "w": 375,
+      "h": 1791,
+      "page": "desktop",
+      "title": "User 360 · 375 · Reports (one report open)"
+    },
+    "Mobile-User360-SendPush.dc.html": {
+      "x": 2970,
+      "y": 51271,
+      "w": 375,
+      "h": 812,
+      "page": "desktop",
+      "title": "User 360 · 375 · send push (bottom sheet)"
+    },
+    "Mobile-User360-ConfirmDelete.dc.html": {
+      "x": 3465,
+      "y": 51271,
+      "w": 375,
+      "h": 812,
+      "page": "desktop",
+      "title": "User 360 · 375 · confirm delete"
+    },
+    "Mobile-Support-Tickets.dc.html": {
+      "x": 0,
+      "y": 54243,
+      "w": 375,
+      "h": 773,
+      "page": "desktop",
+      "title": "Support · 375 · ticket list"
+    },
+    "Mobile-Support-Ticket.dc.html": {
+      "x": 495,
+      "y": 54243,
+      "w": 375,
+      "h": 850,
+      "page": "desktop",
+      "title": "Support · 375 · open ticket (narrow only)"
+    },
+    "Mobile-Support-ConfirmReply.dc.html": {
+      "x": 990,
+      "y": 54243,
+      "w": 375,
+      "h": 812,
+      "page": "desktop",
+      "title": "Support · 375 · confirm reply"
+    },
+    "Mobile-Support-Answered.dc.html": {
+      "x": 1485,
+      "y": 54243,
+      "w": 375,
+      "h": 676,
+      "page": "desktop",
+      "title": "Support · 375 · answered ticket"
+    },
+    "Mobile-Support-Ratings.dc.html": {
+      "x": 1980,
+      "y": 54243,
+      "w": 375,
+      "h": 1562,
+      "page": "desktop",
+      "title": "Support · 375 · session ratings"
     }
   },
   "order": [
@@ -1268,12 +1428,32 @@
     "Desktop-Login-Default.dc.html",
     "Desktop-Login-Error.dc.html",
     "Desktop-Login-Busy.dc.html",
-    "Desktop-Login-Dark.dc.html"
+    "Desktop-Login-Dark.dc.html",
+    "Mobile-Overview-Default.dc.html",
+    "Mobile-Overview-Acknowledged.dc.html",
+    "Mobile-Overview-AllClear.dc.html",
+    "Mobile-Overview-Loading.dc.html",
+    "Mobile-Overview-CardError.dc.html",
+    "Mobile-Overview-Dark.dc.html",
+    "Mobile-Overview-Menu.dc.html",
+    "Mobile-User360-Connections.dc.html",
+    "Mobile-User360-Logins.dc.html",
+    "Mobile-User360-Purchases.dc.html",
+    "Mobile-User360-Support.dc.html",
+    "Mobile-User360-Notifications.dc.html",
+    "Mobile-User360-Reports.dc.html",
+    "Mobile-User360-SendPush.dc.html",
+    "Mobile-User360-ConfirmDelete.dc.html",
+    "Mobile-Support-Tickets.dc.html",
+    "Mobile-Support-Ticket.dc.html",
+    "Mobile-Support-ConfirmReply.dc.html",
+    "Mobile-Support-Answered.dc.html",
+    "Mobile-Support-Ratings.dc.html"
   ],
   "notes": {
     "desktop-Overview-0": {
       "x": 0,
-      "y": 2495,
+      "y": 2557,
       "text": "1440 × 900 shows the KPI strip and the top of the alert inbox and country list without scroll. No tile shows one overall success rate (board 2026-11-02).",
       "w": 640,
       "page": "desktop",
@@ -1282,7 +1462,7 @@
     },
     "desktop-Overview-1": {
       "x": 6240,
-      "y": 2491,
+      "y": 2553,
       "text": "One endpoint fails: only its card shows the error. The other cards stay usable.",
       "w": 640,
       "page": "desktop",
@@ -1291,7 +1471,7 @@
     },
     "desktop-Overview": {
       "x": 0,
-      "y": 995,
+      "y": 1057,
       "text": "Overview",
       "kind": "title1",
       "maxW": 9240,
@@ -1299,7 +1479,7 @@
     },
     "desktop-Server360-3": {
       "x": 0,
-      "y": 4487,
+      "y": 4549,
       "text": "The brief's Node 360 (UI word: Server). Tabs load when opened (query budget). Users now vs a limit: P1.2 decides the limit; until then \"no limit set\".",
       "w": 640,
       "page": "desktop",
@@ -1308,7 +1488,7 @@
     },
     "desktop-Server360-4": {
       "x": 14040,
-      "y": 4081,
+      "y": 4143,
       "text": "Every destructive action ends with \"…\" and opens a confirm step.",
       "w": 640,
       "page": "desktop",
@@ -1317,7 +1497,7 @@
     },
     "desktop-Server360-5": {
       "x": 29640,
-      "y": 4081,
+      "y": 4143,
       "text": "Delete and Destroy are two steps on purpose: Delete removes the server from the panel; Destroy deletes the machine at the provider. Both ask to type the name.",
       "w": 640,
       "page": "desktop",
@@ -1326,7 +1506,7 @@
     },
     "desktop-Server360": {
       "x": 0,
-      "y": 2943,
+      "y": 3005,
       "text": "Server 360",
       "kind": "title1",
       "maxW": 34200,
@@ -1334,7 +1514,7 @@
     },
     "desktop-Country360-7": {
       "x": 0,
-      "y": 7016,
+      "y": 7078,
       "text": "Each section names its source. Sections 3–5 load when scrolled into view (query budget). Old places: Country Scoreboard (1), Ladder country row + walk + editor (2), Reachability (3), Domain Health country list (4), Audit log (5).",
       "w": 640,
       "page": "desktop",
@@ -1343,7 +1523,7 @@
     },
     "desktop-Country360-8": {
       "x": 3120,
-      "y": 6450,
+      "y": 6512,
       "text": "The editor is a sheet without scrim: the outcomes and the walk stay readable next to it. No Country Restrictions page.",
       "w": 640,
       "page": "desktop",
@@ -1352,7 +1532,7 @@
     },
     "desktop-Country360": {
       "x": 0,
-      "y": 4935,
+      "y": 4997,
       "text": "Country 360",
       "kind": "title1",
       "maxW": 10800,
@@ -1360,7 +1540,7 @@
     },
     "desktop-Appserverlistloadbalancers-10": {
       "x": 0,
-      "y": 9009,
+      "y": 9071,
       "text": "Words for gate 2: Server = physical host, List item = row of the app's server list, Load balancer = group of servers behind one list item. Frankfurt load is visible; the logic is VPN-705.",
       "w": 640,
       "page": "desktop",
@@ -1369,7 +1549,7 @@
     },
     "desktop-Appserverlistloadbalancers-11": {
       "x": 12480,
-      "y": 9009,
+      "y": 9071,
       "text": "Fields as in the code today: name and servers. The pick rule is stated, so the operator knows why one member is full; changing it is VPN-705.",
       "w": 640,
       "page": "desktop",
@@ -1378,7 +1558,7 @@
     },
     "desktop-Appserverlistloadbalancers": {
       "x": 0,
-      "y": 7464,
+      "y": 7526,
       "text": "App server list & load balancers",
       "kind": "title1",
       "maxW": 18600,
@@ -1386,7 +1566,7 @@
     },
     "desktop-Countries-13": {
       "x": 0,
-      "y": 10667,
+      "y": 10729,
       "text": "IR, RU and CN are full rows here (Overview shows them in one line). Too little data rows are grey and sort to the end of their group. No Country Restrictions page.",
       "w": 640,
       "page": "desktop",
@@ -1395,7 +1575,7 @@
     },
     "desktop-Countries-14": {
       "x": 6240,
-      "y": 10667,
+      "y": 10729,
       "text": "“? Terms” opens the same sheet on every page (VPN-703 row 42). Words follow the Ladder glossary §4.",
       "w": 640,
       "page": "desktop",
@@ -1404,7 +1584,7 @@
     },
     "desktop-Countries": {
       "x": 0,
-      "y": 9457,
+      "y": 9519,
       "text": "Countries",
       "kind": "title1",
       "maxW": 7680,
@@ -1412,7 +1592,7 @@
     },
     "desktop-User360-16": {
       "x": 0,
-      "y": 12253,
+      "y": 12315,
       "text": "Summary column + one tab per history; each tab loads when opened. User ids, e-mails and device ids are always masked in designs.",
       "w": 640,
       "page": "desktop",
@@ -1421,7 +1601,7 @@
     },
     "desktop-User360": {
       "x": 0,
-      "y": 11115,
+      "y": 11177,
       "text": "User 360",
       "kind": "title1",
       "maxW": 12360,
@@ -1429,7 +1609,7 @@
     },
     "desktop-Support-18": {
       "x": 0,
-      "y": 13839,
+      "y": 13901,
       "text": "The red context line links the complaint to known problems (country below 99 %, unreachable server), so the reply needs no second page.",
       "w": 640,
       "page": "desktop",
@@ -1438,7 +1618,7 @@
     },
     "desktop-Support": {
       "x": 0,
-      "y": 12701,
+      "y": 12763,
       "text": "Support",
       "kind": "title1",
       "maxW": 6120,
@@ -1446,7 +1626,7 @@
     },
     "desktop-FleetServers-20": {
       "x": 0,
-      "y": 15628,
+      "y": 15690,
       "text": "Old \"VPNs\" page. Version drift, AWG generations and backup role are columns and cards here (VPN-703 rows 16, 17, 21, 35–37). The table scrolls inside its card, never the page.",
       "w": 640,
       "page": "desktop",
@@ -1455,7 +1635,7 @@
     },
     "desktop-FleetServers-21": {
       "x": 10920,
-      "y": 15628,
+      "y": 15690,
       "text": "Row menu “Restart services…” opens the same dialog as Server 360 · confirm restart all services.",
       "w": 640,
       "page": "desktop",
@@ -1464,7 +1644,7 @@
     },
     "desktop-FleetServers": {
       "x": 0,
-      "y": 14287,
+      "y": 14349,
       "text": "Fleet › Servers",
       "kind": "title1",
       "maxW": 12360,
@@ -1472,7 +1652,7 @@
     },
     "desktop-FleetUptime-23": {
       "x": 0,
-      "y": 17318,
+      "y": 17380,
       "text": "Target 99.9 % per server per month (VPN-703 row 24). Breach alerts go to the Overview inbox when B5 exists; until then the tile says No data yet.",
       "w": 640,
       "page": "desktop",
@@ -1481,7 +1661,7 @@
     },
     "desktop-FleetUptime": {
       "x": 0,
-      "y": 16076,
+      "y": 16138,
       "text": "Fleet › Uptime",
       "kind": "title1",
       "maxW": 6120,
@@ -1489,7 +1669,7 @@
     },
     "desktop-FleetProvideraccounts-25": {
       "x": 0,
-      "y": 18904,
+      "y": 18966,
       "text": "VPN-703 row 22. Delete gets a confirm step (it had none). Keys are masked in the panel too, not only in the design.",
       "w": 640,
       "page": "desktop",
@@ -1498,7 +1678,7 @@
     },
     "desktop-FleetProvideraccounts": {
       "x": 0,
-      "y": 17766,
+      "y": 17828,
       "text": "Fleet › Provider accounts",
       "kind": "title1",
       "maxW": 7680,
@@ -1506,7 +1686,7 @@
     },
     "desktop-Users-27": {
       "x": 0,
-      "y": 20490,
+      "y": 20552,
       "text": "VPN-703 rows 1–2. E-mails and ids are masked in design files; the panel shows them in full. Delete moves to the row menu with a confirm step (same dialog as User 360).",
       "w": 640,
       "page": "desktop",
@@ -1515,7 +1695,7 @@
     },
     "desktop-Users-28": {
       "x": 3120,
-      "y": 20490,
+      "y": 20552,
       "text": "Row menu “Send push…” and “Delete user…” open the same dialogs as User 360.",
       "w": 640,
       "page": "desktop",
@@ -1524,7 +1704,7 @@
     },
     "desktop-Users": {
       "x": 0,
-      "y": 19352,
+      "y": 19414,
       "text": "Users",
       "kind": "title1",
       "maxW": 6120,
@@ -1532,7 +1712,7 @@
     },
     "desktop-UsersSupportNotifications-30": {
       "x": 0,
-      "y": 22190,
+      "y": 22252,
       "text": "VPN-703 row 28. Scheduled rules, stats, placements, broadcast and audience preview stay. Create and edit use one form (sheet). Run now and Delete get a confirm step. The assistant (AI rule chat) opens from the form.",
       "w": 640,
       "page": "desktop",
@@ -1541,7 +1721,7 @@
     },
     "desktop-UsersSupportNotifications-31": {
       "x": 3120,
-      "y": 22190,
+      "y": 22252,
       "text": "The assistant (AI rule chat) opens from the rule form. It proposes fields; only the ticked ones go into the form.",
       "w": 640,
       "page": "desktop",
@@ -1550,7 +1730,7 @@
     },
     "desktop-UsersSupportNotifications-32": {
       "x": 9360,
-      "y": 22190,
+      "y": 22252,
       "text": "New confirm step: Broadcast sends at once today, with no review.",
       "w": 640,
       "page": "desktop",
@@ -1559,7 +1739,7 @@
     },
     "desktop-UsersSupportNotifications": {
       "x": 0,
-      "y": 20938,
+      "y": 21000,
       "text": "Users & Support › Notifications",
       "kind": "title1",
       "maxW": 15480,
@@ -1567,7 +1747,7 @@
     },
     "desktop-AnalyticsAppreports-34": {
       "x": 0,
-      "y": 24345,
+      "y": 24407,
       "text": "VPN-703 row 8. The app version filter moved here from the old dashboard (it changed only 3 cards there). Ad wall reports are left out by default.",
       "w": 640,
       "page": "desktop",
@@ -1576,7 +1756,7 @@
     },
     "desktop-AnalyticsAppreports": {
       "x": 0,
-      "y": 22638,
+      "y": 22700,
       "text": "Analytics › App reports",
       "kind": "title1",
       "maxW": 3000,
@@ -1584,7 +1764,7 @@
     },
     "desktop-AnalyticsConnectfailures-36": {
       "x": 0,
-      "y": 26381,
+      "y": 26443,
       "text": "VPN-703 row 14. Per rung try, so the banner says how to read it. Per server: Server 360 › Connect results. Per country: Country 360 › Connect outcomes.",
       "w": 640,
       "page": "desktop",
@@ -1593,7 +1773,7 @@
     },
     "desktop-AnalyticsConnectfailures": {
       "x": 0,
-      "y": 24793,
+      "y": 24855,
       "text": "Analytics › Connect failures",
       "kind": "title1",
       "maxW": 1440,
@@ -1601,7 +1781,7 @@
     },
     "desktop-AnalyticsConnecttimebybuild-38": {
       "x": 0,
-      "y": 27967,
+      "y": 28029,
       "text": "VPN-703 row 13 (was on the Ladder page). First rung and rescued times are drawn apart (VPN-206).",
       "w": 640,
       "page": "desktop",
@@ -1610,7 +1790,7 @@
     },
     "desktop-AnalyticsConnecttimebybuild": {
       "x": 0,
-      "y": 26829,
+      "y": 26891,
       "text": "Analytics › Connect time by build",
       "kind": "title1",
       "maxW": 3000,
@@ -1618,7 +1798,7 @@
     },
     "desktop-AnalyticsUsageprotocols-40": {
       "x": 0,
-      "y": 30123,
+      "y": 30185,
       "text": "VPN-703 row 31. Server connections show the Partial state. Credential leases stay a shadow card until a policy is chosen.",
       "w": 640,
       "page": "desktop",
@@ -1627,7 +1807,7 @@
     },
     "desktop-AnalyticsUsageprotocols": {
       "x": 0,
-      "y": 28415,
+      "y": 28477,
       "text": "Analytics › Usage & protocols",
       "kind": "title1",
       "maxW": 1440,
@@ -1635,7 +1815,7 @@
     },
     "desktop-AnalyticsAds-42": {
       "x": 0,
-      "y": 31816,
+      "y": 31878,
       "text": "VPN-703 row 9. User ids are masked.",
       "w": 640,
       "page": "desktop",
@@ -1644,7 +1824,7 @@
     },
     "desktop-AnalyticsAds": {
       "x": 0,
-      "y": 30571,
+      "y": 30633,
       "text": "Analytics › Ads",
       "kind": "title1",
       "maxW": 3000,
@@ -1652,7 +1832,7 @@
     },
     "desktop-SystemChangehistory-44": {
       "x": 0,
-      "y": 33402,
+      "y": 33464,
       "text": "VPN-703 row 30 (audit log). Same data as the Change history cards on Server 360, App server list and Country 360. Filters: object, action (new in the UI), before date. Paging by time: Newest / Load older.",
       "w": 640,
       "page": "desktop",
@@ -1661,7 +1841,7 @@
     },
     "desktop-SystemChangehistory": {
       "x": 0,
-      "y": 32264,
+      "y": 32326,
       "text": "System › Change history",
       "kind": "title1",
       "maxW": 3000,
@@ -1669,7 +1849,7 @@
     },
     "desktop-SystemAppversionsroutes-46": {
       "x": 0,
-      "y": 35092,
+      "y": 35154,
       "text": "VPN-703 row 23. Was a sheet in the header; now a System page. Fields are the ones the backend has: latest, minimum (hard), recommended (soft, iOS), old app alert (iOS), CIDR routes (iOS; macOS uses iOS until saved).",
       "w": 640,
       "page": "desktop",
@@ -1678,7 +1858,7 @@
     },
     "desktop-SystemAppversionsroutes-47": {
       "x": 3120,
-      "y": 34988,
+      "y": 35050,
       "text": "macOS shows the fallback state: no own row, so the Mac app follows iOS. Text is from the panel i18n (appSettings.macos).",
       "w": 640,
       "page": "desktop",
@@ -1687,7 +1867,7 @@
     },
     "desktop-SystemAppversionsroutes": {
       "x": 0,
-      "y": 33850,
+      "y": 33912,
       "text": "System › App versions & routes",
       "kind": "title1",
       "maxW": 7680,
@@ -1695,7 +1875,7 @@
     },
     "desktop-SystemReachabilityrules-49": {
       "x": 0,
-      "y": 36986,
+      "y": 37048,
       "text": "VPN-703 row 26 (rule settings). Only the switches can change. The thresholds are written as sentences and marked “Fixed in code”. Steer mode Off / Shadow / On is shown as a control: today the panel only displays it (P1.2 decides).",
       "w": 640,
       "page": "desktop",
@@ -1704,7 +1884,7 @@
     },
     "desktop-SystemReachabilityrules-50": {
       "x": 3120,
-      "y": 36986,
+      "y": 37048,
       "text": "Live probes on / off saves at once without a confirm: it changes only how fast pairs clear.",
       "w": 640,
       "page": "desktop",
@@ -1713,7 +1893,7 @@
     },
     "desktop-SystemReachabilityrules": {
       "x": 0,
-      "y": 35601,
+      "y": 35663,
       "text": "System › Reachability rules",
       "kind": "title1",
       "maxW": 4560,
@@ -1721,7 +1901,7 @@
     },
     "desktop-SystemAPIresponsetime-52": {
       "x": 0,
-      "y": 38805,
+      "y": 38867,
       "text": "VPN-703 row 39. Moved from the Overview. Data: average, lowest, highest and count per endpoint group per hour. No p95 and no target exist yet (proposals).",
       "w": 640,
       "page": "desktop",
@@ -1730,7 +1910,7 @@
     },
     "desktop-SystemAPIresponsetime": {
       "x": 0,
-      "y": 37434,
+      "y": 37496,
       "text": "System › API response time",
       "kind": "title1",
       "maxW": 3000,
@@ -1738,7 +1918,7 @@
     },
     "desktop-CountriesConnectionLadder-54": {
       "x": 0,
-      "y": 41944,
+      "y": 42006,
       "text": "VPN-703 rows 12, 25, 38. Fleet page under Countries. Country orders use store country; fleet health and connects use IP country. A country row opens Country 360 › Connection order (editor next to evidence). Connect time by build → Analytics; AWG generations → Fleet › Servers.",
       "w": 640,
       "page": "desktop",
@@ -1747,7 +1927,7 @@
     },
     "desktop-CountriesConnectionLadder": {
       "x": 0,
-      "y": 39253,
+      "y": 39315,
       "text": "Countries › Connection Ladder",
       "kind": "title1",
       "maxW": 10800,
@@ -1755,7 +1935,7 @@
     },
     "desktop-CountriesAPIdomains-56": {
       "x": 0,
-      "y": 44891,
+      "y": 44953,
       "text": "VPN-703 row 29 (old Domain Health). Two zones: what we own (fleet, wiring check, client API directory) and what devices report (country verdicts, trend, raw reports). Country = store country * until P1.2 confirms it. Domain alerts and “Seen” stay in the Overview inbox. Board 2026-11-15: one host list per country. A host banned in a country is skipped there; one step lifts the ban. Operator's view only: the data and app side come from VPN-819 (not started).",
       "w": 640,
       "page": "desktop",
@@ -1764,7 +1944,7 @@
     },
     "desktop-CountriesAPIdomains-57": {
       "x": 7800,
-      "y": 44891,
+      "y": 44953,
       "text": "Board 2026-11-15: one host list per country. A host banned in a country is skipped there; one step lifts the ban. Operator's view only: the data and app side come from VPN-819 (not started).",
       "w": 640,
       "page": "desktop",
@@ -1773,7 +1953,7 @@
     },
     "desktop-CountriesAPIdomains-58": {
       "x": 9360,
-      "y": 44891,
+      "y": 44953,
       "text": "Board 2026-11-15: one host list per country. A host banned in a country is skipped there; one step lifts the ban. Operator's view only: the data and app side come from VPN-819 (not started).",
       "w": 640,
       "page": "desktop",
@@ -1782,7 +1962,7 @@
     },
     "desktop-CountriesAPIdomains-59": {
       "x": 10920,
-      "y": 44891,
+      "y": 44953,
       "text": "Board 2026-11-15: one host list per country. A host banned in a country is skipped there; one step lifts the ban. Operator's view only: the data and app side come from VPN-819 (not started).",
       "w": 640,
       "page": "desktop",
@@ -1791,7 +1971,7 @@
     },
     "desktop-CountriesAPIdomains-60": {
       "x": 12480,
-      "y": 44891,
+      "y": 44953,
       "text": "Board 2026-11-15: one host list per country. A host banned in a country is skipped there; one step lifts the ban. Operator's view only: the data and app side come from VPN-819 (not started).",
       "w": 640,
       "page": "desktop",
@@ -1800,7 +1980,7 @@
     },
     "desktop-CountriesAPIdomains-61": {
       "x": 14040,
-      "y": 44891,
+      "y": 44953,
       "text": "Board 2026-11-15: one host list per country. A host banned in a country is skipped there; one step lifts the ban. Operator's view only: the data and app side come from VPN-819 (not started).",
       "w": 640,
       "page": "desktop",
@@ -1809,7 +1989,7 @@
     },
     "desktop-CountriesAPIdomains": {
       "x": 0,
-      "y": 42392,
+      "y": 42454,
       "text": "Countries › API domains",
       "kind": "title1",
       "maxW": 18600,
@@ -1817,7 +1997,7 @@
     },
     "desktop-Login-63": {
       "x": 0,
-      "y": 46594,
+      "y": 46656,
       "text": "VPN-703 row 43. Name and logo from env. Neutral here; the brand layer (main button, ring, backdrop) is on a private page. “Admin Login” and the e-mail icon go: the field is a username. One error text for both fields (it does not say which one is wrong).",
       "w": 640,
       "page": "desktop",
@@ -1826,10 +2006,88 @@
     },
     "desktop-Login": {
       "x": 0,
-      "y": 45542,
+      "y": 45604,
       "text": "Login",
       "kind": "title1",
       "maxW": 6120,
+      "page": "desktop"
+    },
+    "desktop-Mobile375Overview-65": {
+      "x": 0,
+      "y": 50703,
+      "text": "375 order: page question, alert inbox, countries below 99 % (MENA first, each with n; Iran, Russia, China in one short watch line), KPIs 2 per row, fleet as stacked rows, traffic. Same words and numbers as 1440.",
+      "w": 375,
+      "page": "desktop",
+      "fill": "blue",
+      "size": "l"
+    },
+    "desktop-Mobile375Overview-66": {
+      "x": 2970,
+      "y": 48068,
+      "text": "Narrow only. Menu opens the sidebar as a drawer (300 px, 44 px items). Language and theme move from the header into the drawer foot.",
+      "w": 375,
+      "page": "desktop",
+      "fill": "blue",
+      "size": "l"
+    },
+    "desktop-Mobile375Overview": {
+      "x": 0,
+      "y": 47104,
+      "text": "Mobile 375 · Overview",
+      "kind": "title1",
+      "maxW": 3345,
+      "page": "desktop"
+    },
+    "desktop-Mobile375User360-68": {
+      "x": 0,
+      "y": 53675,
+      "text": "375: the actions stay as buttons under the user (no hidden menu). Tabs scroll inside their row; the active tab is always in view. Tab content first, then the summary cards.",
+      "w": 375,
+      "page": "desktop",
+      "fill": "blue",
+      "size": "l"
+    },
+    "desktop-Mobile375User360-69": {
+      "x": 2970,
+      "y": 52115,
+      "text": "Forms with more than one field open as a full-width bottom sheet at 375. Confirm steps stay a dialog, 343 px wide.",
+      "w": 375,
+      "page": "desktop",
+      "fill": "blue",
+      "size": "l"
+    },
+    "desktop-Mobile375User360": {
+      "x": 0,
+      "y": 51151,
+      "text": "Mobile 375 · User 360",
+      "kind": "title1",
+      "maxW": 3840,
+      "page": "desktop"
+    },
+    "desktop-Mobile375Support-71": {
+      "x": 0,
+      "y": 55048,
+      "text": "375: the list and the ticket are two screens. A row opens the ticket; \"Tickets\" goes back. Search full width + one Filters button (sheet).",
+      "w": 375,
+      "page": "desktop",
+      "fill": "blue",
+      "size": "l"
+    },
+    "desktop-Mobile375Support-72": {
+      "x": 495,
+      "y": 55125,
+      "text": "Narrow only: the ticket as its own screen. The red context line stays above the message, as at 1440.",
+      "w": 375,
+      "page": "desktop",
+      "fill": "blue",
+      "size": "l"
+    },
+    "desktop-Mobile375Support": {
+      "x": 0,
+      "y": 54123,
+      "text": "Mobile 375 · Support",
+      "kind": "title1",
+      "maxW": 2355,
       "page": "desktop"
     }
   }
