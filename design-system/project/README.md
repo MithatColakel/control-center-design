@@ -70,7 +70,7 @@ Inter (variable, OFL), self-hosted from `fonts/` (latin + latin-ext for Turkish)
 - 4 px scale (Tailwind). Page padding 24 (1440, 1024) and 16 (375). Gap between cards 16; between page sections 20.
 - Radius: `radius-sm` 4 (chips with square ends, flags), `radius-md` 6 (buttons, inputs, menus), `radius-lg` 8 (cards, tables; = shadcn `--radius`), `radius-xl` 12 (dialogs), `radius-full`.
 - Shadows: `shadow-xs` (cards, inputs), `shadow-md` (menus, tooltips), `shadow-lg` (dialogs, sheets, toasts). Dark relies on borders more than shadows.
-- Sizes: header 56, sidebar 240, rail 60, controls 36 / 32 / 28, table rows 44 / 36.
+- Sizes: header 56, sidebar 240, rail 60, controls 36 / 32 / 28 (at 375: 44 for every control), table rows 44 / 36.
 
 ## Layout and breakpoints
 

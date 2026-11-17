@@ -16,4 +16,4 @@ Code: shadcn `Button` (`src/components/ui/button.tsx`), variants `default` (= pr
 
 States: hover (`primary-hover` / `accent`), focus (2 px `ring`, offset 2), loading (spinner before the label, label stays, button disabled), disabled (opacity 0.5, no tooltip needed if the reason is shown next to it).
 
-Sizes: default 36 px, `sm` 32 px (page and card headers, filter bar), `xs` 28 px (inside table rows and inbox items), `icon` 36 / 32 square. Touch targets at 375 stay ≥ 32 px with 8 px gap.
+Sizes: default 36 px, `sm` 32 px (page and card headers, filter bar), `xs` 28 px (inside table rows and inbox items), `icon` 36 / 32 square. At 375 (below 768 px): controls 44 px. Every size is 44 px high (`max-md:h-11`) and icon buttons are 44 × 44 (`max-md:h-11 max-md:w-11`). Header buttons (menu, alerts, account) keep a 32 px look inside a 44 × 44 tap area. In a dialog footer the buttons share the footer width.
