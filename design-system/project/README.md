@@ -103,6 +103,16 @@ Inter (variable, OFL), self-hosted from `fonts/` (latin + latin-ext for Turkish)
 
 Each card has a README with the shadcn part to use, anatomy, states and rules.
 
+### Build state
+
+Each card names its state at the top of its preview file (`status`).
+
+- **Live · F1** (on both panels since 2026-11-25): Colors, Typography, SpaceRadiusElevation, Layout, Icons, AppShell, Sidebar, Header, PageHeader.
+- **Live · F2** (on both panels since 2026-11-25): Button, Card, Chip, ConfirmDialog, CountryRow, DataTable, NarrowTable, Dialog, Overlays, FilterBar, Forms, Flag, KPITile, Meter, Charts, ChartColors, SmallCharts, SourceLabel, States, Tabs.
+- **Approved, not built:** AlertInbox (comes with F3, Overview), LadderOrderEditor (comes with F5, Country 360).
+
+On the screens page, the rows "Live · …" hold the pages that are live (F1, F6, F7). The rows "Approved, not built · …" hold the pages of F3, F4 and F5.
+
 ## States
 
 Every card loads and fails on its own. Looks and text rules: **States** card.

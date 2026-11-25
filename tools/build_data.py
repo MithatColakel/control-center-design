@@ -50,11 +50,13 @@ for d in sorted(os.listdir(comp_dir)):
     first = open(prev, encoding="utf-8").readline()
     group = re.search(r'group="([^"]*)"', first)
     sub = re.search(r'subtitle="([^"]*)"', first)
+    status = re.search(r'status="([^"]*)"', first)
     h = re.search(r"height=(\d+)", first)
     readme = os.path.join(comp_dir, d, "README.md")
     cards.append({
         "id": d, "title": d, "group": group.group(1) if group else "Cover",
-        "subtitle": sub.group(1) if sub else "", "w": 960, "h": int(h.group(1)) if h else 600,
+        "subtitle": (status.group(1) + " · " if status else "") + (sub.group(1) if sub else ""),
+        "status": status.group(1) if status else None, "w": 960, "h": int(h.group(1)) if h else 600,
         "file": f"design-system/project/components/{d}/preview.html",
         "readme": f"design-system/project/components/{d}/README.md" if os.path.exists(readme) else None,
     })
