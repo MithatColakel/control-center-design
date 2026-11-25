@@ -744,24 +744,8 @@
       "page": "desktop",
       "title": "Notifications · placements (dialog)"
     },
-    "Desktop-Notifications-Broadcast.dc.html": {
-      "x": 7800,
-      "y": 7457,
-      "w": 1440,
-      "h": 1100,
-      "page": "desktop",
-      "title": "Notifications · broadcast (dialog)"
-    },
-    "Desktop-Notifications-ConfirmBroadcast.dc.html": {
-      "x": 9360,
-      "y": 7457,
-      "w": 1440,
-      "h": 1100,
-      "page": "desktop",
-      "title": "Notifications · confirm broadcast"
-    },
     "Desktop-Notifications-ConfirmRun.dc.html": {
-      "x": 10920,
+      "x": 7800,
       "y": 7457,
       "w": 1440,
       "h": 1100,
@@ -769,7 +753,7 @@
       "title": "Notifications · confirm Run now"
     },
     "Desktop-Notifications-ConfirmDelete.dc.html": {
-      "x": 12480,
+      "x": 9360,
       "y": 7457,
       "w": 1440,
       "h": 1100,
@@ -777,7 +761,7 @@
       "title": "Notifications · confirm delete rule"
     },
     "Desktop-Notifications-NoMatch.dc.html": {
-      "x": 14040,
+      "x": 10920,
       "y": 7457,
       "w": 1440,
       "h": 986,
@@ -1397,8 +1381,6 @@
     "Desktop-Notifications-Assistant.dc.html",
     "Desktop-Notifications-Translations.dc.html",
     "Desktop-Notifications-Placements.dc.html",
-    "Desktop-Notifications-Broadcast.dc.html",
-    "Desktop-Notifications-ConfirmBroadcast.dc.html",
     "Desktop-Notifications-ConfirmRun.dc.html",
     "Desktop-Notifications-ConfirmDelete.dc.html",
     "Desktop-Notifications-NoMatch.dc.html",
@@ -1803,7 +1785,7 @@
     "desktop-UsersSupportNotifications-30": {
       "x": 0,
       "y": 8589,
-      "text": "VPN-703 row 28. Scheduled rules, stats, placements, broadcast and audience preview stay. Create and edit use one form (sheet). Run now and Delete get a confirm step. The assistant (AI rule chat) opens from the form.",
+      "text": "VPN-703 row 28. Scheduled rules, stats, placements and audience preview stay. Broadcast left the panel (board 2026-11-25): a one-time rule (“Once”) does the job. Create and edit use one form (sheet). Run now and Delete get a confirm step. The assistant (AI rule chat) opens from the form.",
       "w": 640,
       "page": "desktop",
       "fill": "blue",
@@ -1818,21 +1800,12 @@
       "fill": "blue",
       "size": "l"
     },
-    "desktop-UsersSupportNotifications-32": {
-      "x": 9360,
-      "y": 8589,
-      "text": "New confirm step: Broadcast sends at once today, with no review.",
-      "w": 640,
-      "page": "desktop",
-      "fill": "blue",
-      "size": "l"
-    },
     "desktop-UsersSupportNotifications": {
       "x": 0,
       "y": 7337,
       "text": "Live · Users & Support › Notifications",
       "kind": "title1",
-      "maxW": 15480,
+      "maxW": 12360,
       "page": "desktop"
     },
     "desktop-AnalyticsAppreports-34": {
